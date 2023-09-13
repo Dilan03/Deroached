@@ -1,6 +1,5 @@
 state = PlayerStateFree;
 
-collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
 image_speed = 0;
 hSpeed = 0;
@@ -13,3 +12,11 @@ distanceRoll = 52;
 spriteRun = sPlayerWalk;
 spriteIdle = sPlayerIdle;
 localFrame = 0;
+
+if (global.targetX != -1) {
+	x = global.targetX;
+	y = global.targetY;
+	direction = global.targetDirection;
+}
+
+collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
