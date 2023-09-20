@@ -27,6 +27,7 @@ function SlimeWander(){
 		if ( _distanceToGo < enemySpeed) _speedThisFrame = _distanceToGo;
 		image_speed = 1;
 		dir = point_direction(x,y,xTo, yTo);
+		show_debug_message(dir);
 		hSpeed = lengthdir_x(_speedThisFrame, dir);
 		vSpeed = lengthdir_y(_speedThisFrame, dir);
 		if (hSpeed != 0) image_xscale = sign(hSpeed);
@@ -40,9 +41,10 @@ function SlimeWander(){
 	if (++aggroCheck >= aggroCkeckDuration) {
 		aggroCheck = 0;
 		
-		if(instance_exists(oPlayer)) && (point_distance(x, y, oPlayer.x, oPlayer.y) <= enemyAggroRadius) {
+		if(instance_exists(oPlayer)) && ((point_distance(x, y, oPlayer.x-14, oPlayer.y - 35) <= enemyAggroRadius) || (point_distance(x, y, oPlayer.x+14, oPlayer.y ) <= enemyAggroRadius)){
 			state = ENEMYSTATE.CHASE;
 			target = oPlayer;
+			show_debug_message_ext("{0} - {1}", [dtan(10)*300, "First item"]);
 			path_end();
 		}
 	}

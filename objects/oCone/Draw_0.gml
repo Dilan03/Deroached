@@ -1,0 +1,1 @@
+draw_sprite_ext(sCone,0,owner.x+(20*owner.cose),owner.y+(-20*owner.seno),1,1,owner.direction,c_white,1);

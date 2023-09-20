@@ -12,5 +12,8 @@ state = ENEMYSTATE.WANDER;
 
 sMove = sSlime; 
 
+visionDistance = 50;
+visionAngle = 10;
+
 enemyScript[ENEMYSTATE.WANDER] = SlimeWander;
 enemyScript[ENEMYSTATE.CHASE] = SlimeChase;
