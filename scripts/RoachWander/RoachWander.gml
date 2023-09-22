@@ -1,6 +1,6 @@
 function RoachWander(){
 
-	
+	/*
 	if((x==xTo) && (y==yTo)) || (timePassed > enemyWanderDistance / enemySpeed) {
 		hSpeed = 0;
 		vSpeed = 0;
@@ -43,7 +43,7 @@ function RoachWander(){
 		
 		EnemyTileCollision();
 		
-	}
+	}*/
 	
 	//Check for aggro
 	

@@ -15,6 +15,7 @@
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
+    {"name":"RoachEnemy","order":7,"path":"folders/Scripts/RoachEnemy.yy",},
     {"name":"Slime","order":6,"path":"folders/Scripts/Slime.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
@@ -29,7 +30,6 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Testing","order":1,"path":"folders/Tile Sets/Testing.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"RoachEnemy","order":7,"path":"folders/Scripts/RoachEnemy.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oSlime","order":1,"path":"objects/oSlime/oSlime.yy",},

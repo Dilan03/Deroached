@@ -24,19 +24,24 @@ function RoachChase(){
 			sprite_index = sMove;
 		} 
 		
-		
+		//show_debug_message(CARDINAL_DIR);
 		PlayerAnimateSprite();
+		//EnemyTileCollision();
+		//mp_potential_step(xTo,yTo,1,1);
+		mp_potential_step_object(xTo,yTo,enemySpeed,obj_Wall);
+		EnemyTileCollision();
 		//show_debug_message(dir);
+		/*
 		if(_distanceToGo > enemySpeed) {
 			hSpeed = lengthdir_x(enemySpeed, dir);
 			vSpeed = lengthdir_y(enemySpeed, dir);
 		} else {
 			hSpeed = lengthdir_x(_distanceToGo, dir);
 			vSpeed = lengthdir_y(_distanceToGo, dir);
-		}
+		}*/
 		
 		//if(hSpeed != 0) image_xscale = sign(hSpeed);
 		
-		EnemyTileCollision();
+		
 	}
 }

@@ -1,30 +1,35 @@
 function EnemyTileCollision(){
+	
+	hSpeed = lengthdir_x(inputMagnitud * enemySpeed, inputDirection);
+	vSpeed = lengthdir_y(inputMagnitud * enemySpeed, inputDirection);
+	
 	var _collision = false;
-	if (tilemap_get_at_pixel(collisionMap,x + hSpeed,y))
-	{	
-		var _realx = x;
-		_realx -= _realx mod TILE_SIZE;
-		x = _realx;
-		if (sign(hSpeed) == 1) x += TILE_SIZE - 1;
+	if (tilemap_get_at_pixel(collisionMap, bbox_left - enemySpeed, bbox_top) or tilemap_get_at_pixel(collisionMap, bbox_left - enemySpeed, bbox_bottom)) {	
+		if (sign(hSpeed) == 1) x += enemySpeed;
 		hSpeed = 0;
 		_collision = true;
 	}
-	var _realx = x;
-	_realx += hSpeed;
-	x = _realx;
 
-	if (tilemap_get_at_pixel(collisionMap,x,y + vSpeed))
-	{
-		var _realy = y;
-		_realy -= _realy mod TILE_SIZE;
-		y = _realy;
-		if (sign(vSpeed) == 1) y += TILE_SIZE - 1;
+
+	if (tilemap_get_at_pixel(collisionMap, bbox_right + enemySpeed, bbox_top) or tilemap_get_at_pixel(collisionMap, bbox_right + enemySpeed, bbox_bottom)) {	
+
+		if (sign(hSpeed) == 1) x -= enemySpeed;
+		hSpeed = 0;
+		_collision = true;
+	}
+
+	if (tilemap_get_at_pixel(collisionMap, bbox_left, bbox_top - enemySpeed) or tilemap_get_at_pixel(collisionMap, bbox_right, bbox_top - enemySpeed)) {
+		if (sign(vSpeed) == 1) y += enemySpeed;
 		vSpeed = 0;
 		_collision = true;
 	}
-	var _realy = y;
-	_realy += vSpeed;
-	y = _realy;
+	
+	if (tilemap_get_at_pixel(collisionMap, bbox_left, bbox_bottom + enemySpeed) or tilemap_get_at_pixel(collisionMap, bbox_right, bbox_bottom + enemySpeed)) {
+		if (sign(vSpeed) == 1) y -= enemySpeed;
+		vSpeed = 0;
+		_collision = true;
+	}
+
 
 	return _collision;
 
