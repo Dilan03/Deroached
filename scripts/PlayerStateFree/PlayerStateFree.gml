@@ -5,7 +5,7 @@ function PlayerStateFree(){
 	vSpeed = lengthdir_y(inputMagnitud * speedWalk, inputDirection);
 	
 	PlayerCollision();
-
+	
 	var _oldSprite = sprite_index;
 	if(inputMagnitud != 0) {
 		direction = round(inputDirection);

@@ -7,4 +7,6 @@ keyActivate = keyboard_check_pressed(vk_space);
 inputDirection = point_direction(0,0,keyRight-keyLeft, keyDown-keyUp);
 inputMagnitud = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 
+
+
 PlayerStateFree();
