@@ -1,7 +1,7 @@
 function PlayerCollision(){
 		
-	hSpeed = lengthdir_x(inputMagnitud * speedWalk, inputDirection);
-	vSpeed = lengthdir_y(inputMagnitud * speedWalk, inputDirection);
+	var _hSpeed = lengthdir_x(inputMagnitud * speedWalk, inputDirection);
+	var _vSpeed = lengthdir_y(inputMagnitud * speedWalk, inputDirection);
 	
 	var _collision = false;
 
@@ -12,8 +12,8 @@ function PlayerCollision(){
 		if(left_Top == 0 and left_Bottom == 0) {
 			
 			if (left_Top or left_Bottom) {	
-				if (sign(hSpeed) == 1) x += speedWalk;
-				hSpeed = 0;
+				if (sign(_hSpeed) == 1) x += speedWalk;
+				_hSpeed = 0;
 				_collision = true;
 			}
 
@@ -31,8 +31,8 @@ function PlayerCollision(){
 		if(right_Top == 0 and right_Bottom == 0) {
 			
 			if (right_Top or right_Bottom) {	
-				if (sign(hSpeed) == 1) x -= speedWalk;
-				hSpeed = 0;
+				if (sign(_hSpeed) == 1) x -= speedWalk;
+				_hSpeed = 0;
 				_collision = true;
 			}
 
@@ -50,8 +50,8 @@ function PlayerCollision(){
 		if(up_Left == 0 and up_Right == 0) {
 			
 			if (up_Left or up_Right) {
-				if (sign(vSpeed) == 1) y += speedWalk;
-				vSpeed = 0;
+				if (sign(_vSpeed) == 1) y += speedWalk;
+				_vSpeed = 0;
 				_collision = true;
 			}
 			
@@ -69,8 +69,8 @@ function PlayerCollision(){
 		if(down_Left == 0 and down_Right == 0) {
 			
 			if (down_Left or down_Right) {
-				if (sign(vSpeed) == 1) y -= speedWalk;
-				vSpeed = 0;
+				if (sign(_vSpeed) == 1) y -= speedWalk;
+				_vSpeed = 0;
 				_collision = true;
 			}
 			

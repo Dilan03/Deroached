@@ -46,7 +46,7 @@ function RoachWander(){
 	}*/
 	
 	//Check for aggro
-	
+	/*
 	if (++aggroCheck >= aggroCkeckDuration) {
 		aggroCheck = 0;
 		
@@ -56,5 +56,5 @@ function RoachWander(){
 			show_debug_message_ext("{0} - {1}", [dtan(10)*300, "First item"]);
 			path_end();
 		}
-	}
+	}*/
 }
