@@ -1,9 +1,9 @@
-if(instance_exists(oPlayer)) && (position_meeting(oPlayer.x, oPlayer.y, id)) {
+if(instance_exists(obj_Player)) && (position_meeting(obj_Player.x, obj_Player.y, id)) {
 	
 	global.targetRoom = targetRoom;
 	global.targetX = targetX;
 	global.targetY = targetY;
-	global.targetDirection = oPlayer.direction;
+	global.targetDirection = obj_Player.direction;
 	
 
 	room_goto(targetRoom);

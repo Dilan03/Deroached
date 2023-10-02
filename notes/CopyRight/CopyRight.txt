@@ -1,0 +1,39 @@
+
+Font: Joy Circuit
+
+//tileset used for logo
+https://opengameart.org/content/jojo-jambo-free-sprite-pack
+Cynicemusic palms CC0
+
+
+// shot by mieki256 CC0
+https://opengameart.org/content/sci-fi-shoot-em-up-object-images
+
+
+surt CC0
+https://opengameart.org/content/gradius-clone-sprites "muzzle"
+
+
+// weapon sprites VladPenn CC3by
+https://vladpenn.itch.io/weapon
+
+
+// tileset (modified by me) by DreamyPixelArt CC3by
+https://dreamypixelart.itch.io/pixel-art-interiors
+
+
+// dead body (modified by me) by sergey1212 CC3by
+https://opengameart.org/content/pixel-tds-sprites-in-hotline-miami-style
+
+
+// hit effect by Sinestesia CC0
+https://opengameart.org/content/hit-animation-frame-by-frame
+
+
+1up Indie CC3by
+Icons, Gui, doors,  vignette, all player animations,  code
+
+
+Note:
+All sprites used can be used even commercially, but credit please if CC3by
+(my stuff not necessary but appreciated)

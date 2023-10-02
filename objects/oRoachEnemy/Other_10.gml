@@ -3,6 +3,9 @@
 path_delete(path);
 path = path_add();
 
-mp_grid_path(oSetupPathway.grid, path, x, y, position_Target_x, position_Target_y, 1);
+target_x = oPlayer.x;
+target_y = oPlayer.y;
 
-path_start(path, walkSpeed_Checking, path_action_stop, true);
+mp_grid_path(oSetupPathway.grid, path, x,y, target_x, target_y, 1);
+
+path_start(path, 0.5, path_action_stop, true);

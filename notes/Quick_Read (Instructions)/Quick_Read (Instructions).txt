@@ -1,0 +1,10 @@
+
+Short instructions:
+
+// controls:
+left/right mouse button     -> shooting/throwing/picking up
+keyboard left/right/up/down -> movement
+
+p                           -> quit game
+space                       -> toggle debug off/on
+
