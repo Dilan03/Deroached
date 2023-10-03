@@ -35,8 +35,8 @@
     "path": "sprites/sPlayerWalk/sPlayerWalk.yy",
   },
   "spriteMaskId": {
-    "name": "spr_Mask",
-    "path": "sprites/spr_Mask/spr_Mask.yy",
+    "name": "spr_MaskPlayer",
+    "path": "sprites/spr_MaskPlayer/spr_MaskPlayer.yy",
   },
   "visible": true,
 }

@@ -21,11 +21,11 @@ draw_sprite_ext(weapon_sprite, image_index, x,y, image_xscale, image_yscale, ima
 
 
 // what sprite on each state
-if (state == "attack range"){  aggroState = true;  sprite_index = sprite_NotAggro;    image_speed = 1; walk_Timer = 0; }
-if (state == "nothing here") { aggroState = false; sprite_index = sprite_NotAggro; image_speed = 0; walk_Timer = 0; }
+if (state == "attack range"){  aggroState = true;  sprite_index = sprite_Idle;    image_speed = 0; walk_Timer = 0; }
+if (state == "nothing here") { aggroState = false; sprite_index = sprite_Idle; image_speed = 0; walk_Timer = 0; }
 if (state == "going back")   { aggroState = false; sprite_index = sprite_Aggro; image_speed = 0; walk_Timer++;   }
 if (state == "check out")    { aggroState = true;  sprite_index = sprite_Aggro;    image_speed = 0; walk_Timer++;   }
-if (state == "idle")         { aggroState = false; sprite_index = sprite_NotAggro; image_speed = 0; walk_Timer = 0; }
+if (state == "idle")         { aggroState = false; sprite_index = sprite_Idle; image_speed = 0; walk_Timer = 0; }
 	
 	
 	
@@ -47,6 +47,9 @@ draw_circle_color(x,y,attackRange, c_red, c_red, 0 );
 draw_circle_color(x,y,attackRangeBreak, c_blue, c_blue, 0 );
 draw_set_alpha(1);
 
+draw_set_alpha(0.5);
+draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red, c_red, c_red, 0);
+draw_set_alpha(0.5);
 
 // draw_line_width_color(x,y, x + lengthdir_x(sightMAX,image_angle_ ), y + lengthdir_y(sightMAX,image_angle_ ) , 1.5, c_purple,c_purple  );
 var lineLength = 100;

@@ -15,6 +15,8 @@ image_angle_ = 0;
 // ai state machine
 sightMAX = 120;
 
+facing = "down";
+
 state = "idle";
 //emote_Index = 0; old not used variable
 
@@ -25,6 +27,7 @@ aggroState = false; // is trigger when attacking and chasing, then enemy carry a
 sprite_whenDead = spr_EnemyRed_Dead;
 sprite_NotAggro = spr_EnemyRed_Walk;
 sprite_Aggro    = spr_EnemyRed_Walk_Weapon;
+sprite_Idle	=	sRoackIdle2;
 
 // ai
 emote  = instance_create_layer(x,y-15, layer, obj_Enemy_State_Emote );
@@ -32,16 +35,20 @@ emote.instanceToFollow = id;
 
 localFrame = 0;
 // pathfinding
+
+
+path_end();
 path = path_add();
+
+
 position_Start_X = x;
 position_Start_Y = y;
 
 position_Target_X = x;
 position_Target_Y = y;
 
-
 walkSpeed_Aggro_Checking = 2;
-walkSpeed_Going_Back     = 0.75;
+walkSpeed_Going_Back     = 1;
 
 
 
@@ -50,13 +57,13 @@ ai_NothingHere_time = 180;
 ai_NothingHere_timer = ai_NothingHere_time;
 
 
-ai_I_See_you = 6;
+ai_I_See_you = 3;
 
 
 ai_I_See_you_Angle = 15;
 
 attackRange      = 50;
-attackRangeBreak = 150;
+attackRangeBreak = 200;
 
 // old, changed so it has same code like in obj player
 //attack_Time  = 60;

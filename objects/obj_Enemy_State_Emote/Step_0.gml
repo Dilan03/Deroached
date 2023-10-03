@@ -2,5 +2,5 @@
 // You can write your code in this editor
 if (instanceToFollow != noone){
 x = instanceToFollow.x;
-y = instanceToFollow.y-30;
+y = instanceToFollow.y-5;
 }

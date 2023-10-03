@@ -34,8 +34,8 @@
   "solid": false,
   "spriteId": null,
   "spriteMaskId": {
-    "name": "spr_Mask",
-    "path": "sprites/spr_Mask/spr_Mask.yy",
+    "name": "spr_MaskEnemy",
+    "path": "sprites/spr_MaskEnemy/spr_MaskEnemy.yy",
   },
   "visible": true,
 }
