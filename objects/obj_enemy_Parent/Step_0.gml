@@ -20,13 +20,31 @@ if(inputMagnitud != 0) {
 if(_oldSprite != sprite_index ) localFrame = 0; 
 */
 
-if(state = "check out" || state == "checking out" || state == "nothing here" || state ="going back" || state="attack range" ) {
+if(state = "idle") {
+	if(facing = "down") {
+		image_angle_ = 270;
+		var _totalFrames = sprite_get_number(sprite_index) / 4;
+		image_index = 3 * _totalFrames;
+	}
+	path_started = false;
+	state = "patrolling";
+	
+	//image_angle_ = 90;
+	//image_index = 8;
+
+}
+
+if(state = "check out" || state == "checking out" || state == "nothing here" || state ="going back" || state="attack range" || state = "patrolling") {
 	if(state ="going back") {
 		image_angle_ = point_direction(x,y, position_Start_X,position_Start_Y);
 	} else {
 		image_angle_ = point_direction(x,y, obj_Player.x, obj_Player.y );
 	}
 	
+	
+	if(state = "patrolling") {
+		image_angle_ = direction;
+	}
 	var _totalFrames = sprite_get_number(sprite_index) / 4;
 	image_index = localFrame + round(round(image_angle_/90) * _totalFrames);
 	//show_debug_message(CARDINAL_DIR);
@@ -39,21 +57,14 @@ if(state = "check out" || state == "checking out" || state == "nothing here" || 
 	} else animationEnd = false;
 }
 
-if(state = "idle") {
-	if(facing = "down") {
-		image_angle_ = 270;
-		var _totalFrames = sprite_get_number(sprite_index) / 4;
-		image_index = 3 * _totalFrames;
-	}
-	//image_angle_ = 90;
-	//image_index = 8;
-}
+
 	
 //show_debug_message(direction);
 /// ai
 if (state == "check out"){ 
+
 	event_user(0); state = "checking out";	emote.sprite_index = spr_Emote_Enemy_State_Roaming;
-	}
+}
 	
 if (state == "checking out"){ 
 	if ( distance_to_point(position_Target_X,position_Target_Y) < 5) {
@@ -69,6 +80,7 @@ if (state == "nothing here"){
 		
 	   ai_NothingHere_timer = ai_NothingHere_time;
 	    state = "going back"; event_user(1);
+		
 		emote.sprite_index = spr_Emote_Enemy_State_Roaming;
 
         ai_I_See_you = 6;
@@ -87,9 +99,14 @@ if (state == "going back"){
 }
 
 if (state == "patrolling"){ 
-	event_user(2);
-}
 	
+	
+	if path_started == false {
+		event_user(2);	
+		path_started = true;
+	}
+	
+}
 	
 // new
 if (state == "attack range"){

@@ -36,10 +36,14 @@ emote.instanceToFollow = id;
 localFrame = 0;
 // pathfinding
 
-
 path_end();
 path = path_add();
 
+path_started = false;
+
+patrol_path = path_add();
+
+path_set_closed(patrol_path, true);
 
 position_Start_X = x;
 position_Start_Y = y;
@@ -51,13 +55,13 @@ walkSpeed_Aggro_Checking = 2;
 walkSpeed_Going_Back     = 1;
 
 
-
-
-ai_NothingHere_time = 180;
+ai_NothingHere_time = 60;
 ai_NothingHere_timer = ai_NothingHere_time;
 
 
 ai_I_See_you = 3;
+
+
 
 
 ai_I_See_you_Angle = 15;

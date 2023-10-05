@@ -35,7 +35,7 @@ gamepad_set_axis_deadzone(0, 0.3);
 ai_Refresh = 10;
 alarm[0] = ai_Refresh;
 
-ai_Circle_Range = 100;
+ai_Circle_Range = 50;
 
 if (global.targetX != -1) {
 	x = global.targetX;

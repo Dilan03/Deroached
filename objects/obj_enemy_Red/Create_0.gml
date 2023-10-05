@@ -14,7 +14,7 @@ weapon = "uzi";
 
 // what values to read from when attacking
 attackRange      = 50;
-attackRangeBreak = 100;
+attackRangeBreak = 60;
 
 // how big is the sight angle/cone?
 ai_I_See_you_Angle = 30;
@@ -25,3 +25,6 @@ walkSpeed_Going_Back     = 0.75;
 
 ai_I_See_you = 3;
 
+
+
+state = "patrolling"

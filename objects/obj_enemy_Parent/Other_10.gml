@@ -11,6 +11,3 @@ mp_grid_path(obj_SetupPathway.grid, path, x,y, position_Target_X, position_Targe
 
 // ride on path
 path_start(path, walkSpeed_Aggro_Checking, path_action_stop, true);
-
-
-
