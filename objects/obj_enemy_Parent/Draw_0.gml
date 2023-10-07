@@ -52,7 +52,7 @@ draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red,
 draw_set_alpha(0.5);
 
 //draw_line_width_color(x,y, x + lengthdir_x(sightMAX,image_angle_ ), y + lengthdir_y(sightMAX,image_angle_ ) , 1.5, c_purple,c_purple  );
-var lineLength = 100;
+var lineLength = sightMAX;
 var get_lineMiddle_X = x + lengthdir_x(lineLength, image_angle_);
 var get_lineMiddle_Y = y + lengthdir_y(lineLength, image_angle_);
 

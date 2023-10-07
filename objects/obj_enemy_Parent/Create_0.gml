@@ -13,7 +13,7 @@ image_angle_ = 0;
 
 
 // ai state machine
-sightMAX = 120;
+
 
 facing = "down";
 
@@ -59,15 +59,12 @@ ai_NothingHere_time = 60;
 ai_NothingHere_timer = ai_NothingHere_time;
 
 
+ai_I_See_you_Angle = 15;
 ai_I_See_you = 3;
 
-
-
-
-ai_I_See_you_Angle = 15;
-
-attackRange      = 50;
-attackRangeBreak = 200;
+sightMAX = 100;
+attackRange      = floor(sightMAX/3);
+attackRangeBreak = sightMAX;
 
 // old, changed so it has same code like in obj player
 //attack_Time  = 60;
@@ -77,3 +74,6 @@ shoot_timer = shoot_time;
 
 // used for animation of the feet
 walk_Timer = 0;
+
+ai_Refresh = 10;
+alarm[1] = ai_Refresh;

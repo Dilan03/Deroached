@@ -26,8 +26,8 @@ if(state = "idle") {
 		var _totalFrames = sprite_get_number(sprite_index) / 4;
 		image_index = 3 * _totalFrames;
 	}
-	path_started = false;
-	state = "patrolling";
+	//path_started = false;
+	//state = "patrolling";
 	
 	//image_angle_ = 90;
 	//image_index = 8;
@@ -83,7 +83,7 @@ if (state == "nothing here"){
 		
 		emote.sprite_index = spr_Emote_Enemy_State_Roaming;
 
-        ai_I_See_you = 6;
+        ai_I_See_you = 3;
 		
 	}
 }

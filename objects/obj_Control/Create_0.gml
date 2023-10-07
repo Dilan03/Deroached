@@ -2,7 +2,7 @@
 // You can write your code in this editor
 debug = false;
 
-
+alarm[0] = 1;
 // values of weapons
 damage_Knife = 1;
 damage_Pistol = 1;

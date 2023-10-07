@@ -1,5 +1,5 @@
 /// @description Insert description here
-
+/*
 var _list = ds_list_create();
 var _num = collision_circle_list(x, y, ai_Circle_Range, obj_enemy_Parent, false, true, _list, false);
 if _num > 0
