@@ -15,7 +15,7 @@ weapon = "uzi";
 // what values to read from when attacking
 
 // how big is the sight angle/cone?
-ai_I_See_you_Angle = 40;
+
 
 // how fast is the enemy walking?
 walkSpeed_Aggro_Checking = 2;
@@ -23,6 +23,8 @@ walkSpeed_Going_Back     = 0.75;
 ai_I_See_you = 3;
 state = "idle"
 
+
+ai_I_See_you_Angle = 40;
 sightMAX = 100;
 attackRange      = floor(sightMAX/3);
 attackRangeBreak = sightMAX;

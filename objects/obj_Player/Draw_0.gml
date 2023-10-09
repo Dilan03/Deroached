@@ -29,7 +29,8 @@ if (obj_Control.debug == true) {
 
 draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, 1);
 draw_set_alpha(0.5);
+/*
 draw_circle(x,y , ai_Circle_Range,0 );
 draw_set_alpha(1);
-
+*/
 }
