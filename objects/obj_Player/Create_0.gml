@@ -6,8 +6,8 @@ walk_Timer = 0;
 
 targetDummy = noone;
 
-spriteRun = sPlayerWalk;
-spriteIdle = sPlayerIdle;
+sprite_Walk = sPlayerWalk;
+sprite_Idle = sPlayerIdle;
 localFrame = 0;
 
 // weapon
@@ -25,13 +25,16 @@ image_angle_ = 90;
 
 
 /// input
-control = "keyboard";
-last_Direction = 0;
-gamepad_set_axis_deadzone(0, 0.3);
+
 
 
 
 /// activate Ai of enemies
+#region	controls
+	control = "keyboard";
+	last_Direction = 0;
+	gamepad_set_axis_deadzone(0, 0.3);
+#endregion
 ai_Refresh = 10;
 alarm[0] = ai_Refresh;
 

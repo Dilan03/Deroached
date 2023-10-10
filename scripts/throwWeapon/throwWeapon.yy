@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Input",
+  "name": "throwWeapon",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Inputs",
-    "path": "folders/Scripts/Gameplay/Inputs.yy",
+    "name": "Player",
+    "path": "folders/Scripts/Gameplay/Player.yy",
   },
 }

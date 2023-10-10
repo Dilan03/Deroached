@@ -10,7 +10,7 @@ sprite_Aggro    = sRoachEnemyWalk;
 spirte_Idle	=	sRoackIdle2;
 
 // what weapon are is he holding
-weapon = "uzi";
+weapon = "shotgun";
 
 // what values to read from when attacking
 

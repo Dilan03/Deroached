@@ -2,7 +2,7 @@
 var _list = ds_list_create();
 var _num = collision_circle_list(x, y, sightMAX, obj_Player, false, true, _list, false);
 
-show_debug_message(_num)
+
 if _num > 0 {
 	for (var i = 0; i < _num; ++i;) {
 		var sight_line = collision_line(_list[| i].x, _list[| i].y, x,y, obj_Wall, 0,0);
