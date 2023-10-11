@@ -3,6 +3,14 @@
 debug = false;
 
 alarm[0] = 1;
+
+//Weapon(_x_shot_org, _x_shot_ang, _damage, _shot_speed, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle)
+
+//pistol = new Weapon(_x_shot_org, _x_shot_ang,1, 6, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
+smg = new Weapon(14, 22, 1, 9, 0.04, 22, 75, 5, 14, 22);
+//uzi = new Weapon(_x_shot_org, _x_shot_ang, 1, 9, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
+//aka = new Weapon(_x_shot_org, _x_shot_ang, 1, 7, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
+//mg = new Weapon(_x_shot_org, _x_shot_ang, 1, 7, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
 // values of weapons
 damage_Knife = 1;
 damage_Pistol = 1;
@@ -11,7 +19,6 @@ damage_Uzi = 1;
 damage_Aka = 1;
 damage_Mg = 1;
 damage_Shotgun = 1;
-
 
 ShotSpeed_Pistol = 6;
 ShotSpeed_Smg = 9;
@@ -35,12 +42,11 @@ shoot_timer_Mg  = 8;
 shoot_timer_Shotgun = 80;
 
 ammo_Pistol = 12;
-ammo_Smg = 60;
+ammo_Smg = 55;
 ammo_Uzi = 80;
 ammo_Aka = 40;
 ammo_Mg  = 140;
 ammo_Shotgun = 2;
-
 
 spread_Pistol = 3;
 spread_Smg = 22;

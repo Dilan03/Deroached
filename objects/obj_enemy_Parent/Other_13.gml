@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description override shoot method
 
 if (path_exists(path)) {  path_delete(path);    }
 path = path_add();

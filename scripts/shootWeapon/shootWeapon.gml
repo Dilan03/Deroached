@@ -8,43 +8,46 @@ function shootWeapon(){
 		// create bullet(s) and muzzle
 	switch(weapon) {
 		
-		 case "pistol": {
+		case "pistol": {
 		 
-		 shotX = x + lengthdir_x(12, image_angle_-25);    
-		 shotY = y + lengthdir_y(12, image_angle_-25);  
+			shotX = x + lengthdir_x(12, image_angle_-25);    
+			shotY = y + lengthdir_y(12, image_angle_-25);  
 		
-	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
-		    shot.damage    = obj_Control.damage_Pistol;
-		    shot.speed     = obj_Control.ShotSpeed_Pistol;
-		    shot.friction  = obj_Control.friction_Pistol;
-		    shot.direction = image_angle_ + random_range(-obj_Control.spread_Pistol, obj_Control.spread_Pistol);			
+			var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+			shot.damage    = obj_Control.damage_Pistol;
+			shot.speed     = obj_Control.ShotSpeed_Pistol;
+			shot.friction  = obj_Control.friction_Pistol;
+			shot.direction = image_angle_ + random_range(-obj_Control.spread_Pistol, obj_Control.spread_Pistol);			
 			ammo -= 1; shoot_timer = obj_Control.shoot_timer_Pistol;
 			
 			var muzzle = instance_create_layer(shotX,shotY, "Instances", obj_Muzzle);
-			    muzzle.instance_ToStickTo = id;
-			    muzzle.distance = 11;
-				muzzle.extraAngle = 25;	
+			muzzle.instance_ToStickTo = id;
+			muzzle.distance = 11;
+			muzzle.extraAngle = 25;	
 			
-	      break; }
+		break; }
 
-	 case "smg": {
-
-		 shotX = x + lengthdir_x(14, direction-22);    
-		 shotY = y -20;  
+		case "smg": {
+			var _smg = obj_Control.smg;
+				_smg.playerShoot(obj_Player, obj_Shot, obj_Muzzle);
+			
+			/*
+			shotX = x + lengthdir_x(obj_Control.smg.x_shot_org, direction - obj_Control.smg.x_shot_ang);    
+			shotY = y - 20;  
 		 
-	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
-		    shot.damage   = obj_Control.damage_Smg;
-		    shot.speed    = obj_Control.ShotSpeed_Smg;
-		    shot.friction = obj_Control.friction_Smg;
-		    shot.direction = direction + random_range(-obj_Control.spread_Smg, obj_Control.spread_Smg);			
-			ammo -= 1;  shoot_timer = obj_Control.shoot_timer_Smg;
+			var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+			shot.damage   = obj_Control.smg.damage;
+			shot.speed    = obj_Control.smg.shot_speed;
+			shot.friction = obj_Control.smg.shot_friction;
+			shot.direction = direction + random_range(-obj_Control.smg.spread, obj_Control.smg.spread);			
+			ammo -= 1;  shoot_timer = obj_Control.smg.shoot_timer;
 			
 			var muzzle = instance_create_layer(shotX,shotY, "Instances", obj_Muzzle);
-			    muzzle.instance_ToStickTo = id;
-			    muzzle.distance = 14;
-				muzzle.extraAngle = 22;					
+			muzzle.instance_ToStickTo = id;
+			muzzle.distance = obj_Control.smg.muzzle_distance;
+			muzzle.extraAngle = obj_Control.smg.muzzle_extraAngle;*/			
 				
-	      break; }
+		break; }
 
 
 	 case "uzi": {
@@ -138,4 +141,21 @@ function shootWeapon(){
 			}
 
 	   } // end of switch
+	   
+/*
+	smgWeapon = {
+		x_shot_org: 14,
+		x_shot_ang: 22,
+		damage: 1, 
+		shot_speed: 9,
+		shot_friction: 0.04,
+		spread: 22,
+		ammo: 60, 
+		shoot_timer: 5, 
+		muzzle_distance: 14,
+		muzzle_extraAngle: 22
+	}*/
+	
+	
 }
+

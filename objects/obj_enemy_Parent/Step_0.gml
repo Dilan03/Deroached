@@ -153,7 +153,9 @@ image_angle_ = point_direction(x,y, obj_Player.x, obj_Player.y );
 			      break; }
 
 			case "smg": {
-
+				var _smg = obj_Control.smg;
+					_smg.enemyShoot(obj_enemy_Red, obj_Shot_Enemy, obj_Muzzle);
+				/*
 				 shotX = x + lengthdir_x(14, image_angle_-22);    
 				 shotY = y + lengthdir_y(14, image_angle_-22);  
 		 
@@ -167,7 +169,7 @@ image_angle_ = point_direction(x,y, obj_Player.x, obj_Player.y );
 					var muzzle = instance_create_layer(x,y, "Instances", obj_Muzzle);
 					    muzzle.instance_ToStickTo = id;
 					    muzzle.distance = 14;
-						muzzle.extraAngle = 22;					
+						muzzle.extraAngle = 22;		*/
 				
 			      break; }
 

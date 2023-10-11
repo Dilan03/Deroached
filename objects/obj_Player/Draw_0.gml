@@ -22,7 +22,7 @@ if (obj_Control.debug == true) {
 	draw_set_halign(fa_center);
 
  var text_1 = "Ammo: " + string(ammo);
-//  draw_text_transformed(x,y-40, text_1, 1,1, 0 );
+draw_text_transformed(x,y-40, text_1, 1,1, 0 );
 
  var text_2 = weapon;
 //  draw_text_transformed(x,y-60, text_2, 1,1, 0 );

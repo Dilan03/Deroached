@@ -20,7 +20,7 @@ switch(weapon) {
 
  case "pistol":     spriteToPassIn = spr_Pickup_Pistol;   ammoToPassIn = obj_Control.ammo_Pistol;  break;
 
- case "smg":        spriteToPassIn = spr_Pickup_Smg;      ammoToPassIn = obj_Control.ammo_Smg;  break;
+ case "smg":        spriteToPassIn = spr_Pickup_Smg;      ammoToPassIn = obj_Control.smg.ammo;  break;//////////
  case "uzi":        spriteToPassIn = spr_Pickup_Uzi;      ammoToPassIn = obj_Control.ammo_Uzi;  break;
 
  case "aka":        spriteToPassIn = spr_Pickup_Aka;      ammoToPassIn = obj_Control.ammo_Aka;  break;

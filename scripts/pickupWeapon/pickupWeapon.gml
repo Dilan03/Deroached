@@ -14,8 +14,6 @@ function pickupWeapon(){
 
 		#endregion
 
-
-
 		#region  grab this "new" weapon 
 		 switch(sprite_index) {
 			 case spr_Pickup_Knife:       other.weapon = "knife";   other.weapon_sprite = spr_AttachedWeapon_Knife;    other.sprite_index = spr_PlayerWalk_Weapon;  break;
