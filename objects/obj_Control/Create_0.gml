@@ -7,7 +7,28 @@ alarm[0] = 1;
 //Weapon(_x_shot_org, _x_shot_ang, _damage, _shot_speed, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle)
 
 //pistol = new Weapon(_x_shot_org, _x_shot_ang,1, 6, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
-smg = new Weapon(14, 22, 1, 9, 0.04, 22, 75, 5, 14, 22);
+var _smg_struct = {
+	x_shot_org: 14,
+	x_shot_ang: 22,
+	damage: 1, 
+	shot_speed: 9,
+	shot_friction: 0.04,
+	spread: 22,
+	ammo: 70, 
+	shoot_timer: 5, 
+	muzzle_distance: 14,
+	muzzle_extraAngle: 22
+}
+smg = new Weapon(	_smg_struct.x_shot_org,
+					_smg_struct.x_shot_ang, 
+					_smg_struct.damage, 
+					_smg_struct.shot_speed, 
+					_smg_struct.shot_friction, 
+					_smg_struct.spread, 
+					_smg_struct.ammo, 
+					_smg_struct.shoot_timer, 
+					_smg_struct.muzzle_distance,
+					_smg_struct.muzzle_extraAngle);
 //uzi = new Weapon(_x_shot_org, _x_shot_ang, 1, 9, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
 //aka = new Weapon(_x_shot_org, _x_shot_ang, 1, 7, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
 //mg = new Weapon(_x_shot_org, _x_shot_ang, 1, 7, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
