@@ -30,6 +30,8 @@ if (global.targetX != -1) {
 	direction = global.targetDirection;
 }
 
+keys = 0;
+
 #region not sure to delete
 /*
 ai_Refresh = 10;

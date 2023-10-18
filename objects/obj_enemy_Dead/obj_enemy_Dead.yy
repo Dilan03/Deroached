@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Dead_enemy",
+    "path": "sprites/spr_Dead_enemy/spr_Dead_enemy.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

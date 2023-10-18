@@ -13,10 +13,10 @@ if (walk_Timer > 5) {
 // draw weapon
 //draw_sprite_ext(weapon_sprite, image_index, x+2,y-20, image_xscale, image_yscale, direction, c_white, image_alpha);
 draw_self();
-
+/*
 draw_set_alpha(0.5);
 draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red, c_red, c_red, 0);
-draw_set_alpha(0.5);
+draw_set_alpha(0.5);*/
 // debug checking
 if (obj_Control.debug == true) {
 	draw_set_halign(fa_center);

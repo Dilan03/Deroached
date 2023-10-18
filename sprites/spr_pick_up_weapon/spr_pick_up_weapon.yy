@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Icon_Control",
+  "name": "spr_pick_up_weapon",
   "bbox_bottom": 31,
   "bbox_left": 0,
   "bbox_right": 31,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3132490c-ab79-4d99-bb68-80febfa7e3ed",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6946d8d4-87ae-4336-9c3d-2290706af9ff",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7ef55d7a-d66a-4edb-ba8c-8e383d58bedb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"efc2c3c9-82e3-47ba-a410-ab70df11f929","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Icon_Control",
+    "name": "spr_pick_up_weapon",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3132490c-ab79-4d99-bb68-80febfa7e3ed","path":"sprites/spr_Icon_Control/spr_Icon_Control.yy",},},},"Disabled":false,"id":"59742289-37aa-4c42-be40-00008aaa9a22","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6946d8d4-87ae-4336-9c3d-2290706af9ff","path":"sprites/spr_pick_up_weapon/spr_pick_up_weapon.yy",},},},"Disabled":false,"id":"d23f22c6-9eef-4b6b-ac4a-49a7e53ad1fb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

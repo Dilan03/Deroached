@@ -31,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_pick_up_weapon",
+    "path": "sprites/spr_pick_up_weapon/spr_pick_up_weapon.yy",
+  },
   "spriteMaskId": {
     "name": "spr_MaskEnemy",
     "path": "sprites/spr_MaskEnemy/spr_MaskEnemy.yy",

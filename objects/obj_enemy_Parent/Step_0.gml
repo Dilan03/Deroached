@@ -154,7 +154,7 @@ image_angle_ = point_direction(x,y, obj_Player.x, obj_Player.y );
 
 			case "smg": {
 				var _smg = obj_Control.smg;
-					_smg.enemyShoot(obj_enemy_Red, obj_Shot_Enemy, obj_Muzzle);
+					_smg.enemyShoot(id, obj_Shot_Enemy, obj_Muzzle);
 				/*
 				 shotX = x + lengthdir_x(14, image_angle_-22);    
 				 shotY = y + lengthdir_y(14, image_angle_-22);  
