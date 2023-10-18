@@ -23,6 +23,7 @@
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
+    {"name":"Game","order":4,"path":"folders/Rooms/Game.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Constructors","order":11,"path":"folders/Scripts/Constructors.yy",},
     {"name":"Gameplay","order":10,"path":"folders/Scripts/Gameplay.yy",},
@@ -52,7 +53,6 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Testing","order":1,"path":"folders/Tile Sets/Testing.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Game","order":4,"path":"folders/Rooms/Game.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Icon_Shader","order":5,"path":"sprites/spr_Icon_Shader/spr_Icon_Shader.yy",},
