@@ -1,6 +1,24 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(menu_open) {
+	
+	exit;
+}
+
+//Open DisplayMenu
+if(keyboard_check_pressed(vk_escape)) 
+{
+	var _menu_layer=layer_get_id("DisplayMenu");
+	with(_ui_parent)
+	{
+		ui_element_toggle_active(layer == _menu_layer);
+	}
+	instance_deactivate_layer("Enemies");
+	menu_open=true;
+	image_speed = 0;
+}
+
 image_angle_ = direction;
 
 movePlayer();

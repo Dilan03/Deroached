@@ -4,7 +4,10 @@ function menu_close() {
 	{
 		ui_element_toggle_active(layer == _ui_layer);
 	}
-	with(obj_player) menu_open=false;
+	with(obj_Player) {
+		instance_activate_layer("Enemies");
+		menu_open=false;
+	}
 
 
 

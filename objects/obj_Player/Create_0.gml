@@ -3,6 +3,8 @@ walk_Timer = 0;
 localFrame = 0;
 targetDummy = noone;
 image_angle_ = 0;
+menu_open = false;
+
 
 #region sprites
 	sprite_Walk = sPlayerWalk;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 debug = false;
-
+menu_open=false;
 alarm[0] = 1;
 
 //Weapon(_x_shot_org, _x_shot_ang, _damage, _shot_speed, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle)
