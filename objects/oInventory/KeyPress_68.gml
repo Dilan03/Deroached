@@ -1,0 +1,2 @@
+InventoryRemove(id,1);
+
