@@ -1,15 +1,16 @@
-event_inherited()
-draw_sprite_stretched
+/// @description Insert description here
+// You can write your code in this editor
+event_inherited();
+/*draw_sprite_stretched
 (
 	sInventory,
 	0,
 	x-6,
 	y-6,
 	12+rowLength*36,
-	12+(((INVENTORY_SLOTS-1) div rowLength)+1)*36
+	12+(((3-1) div rowLength)+1)*36
 );
-    
-for (var i = 0; i < INVENTORY_SLOTS; i += 1)
+for (var i = 0; i < 3; i += 1)
 {
 	
     var xx = x + (i mod rowLength) * 36 + 2;
@@ -25,4 +26,6 @@ for (var i = 0; i < INVENTORY_SLOTS; i += 1)
 		draw_set_alpha(1.0);
     }
 }
+// Inherit the parent event
+
 

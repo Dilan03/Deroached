@@ -63,6 +63,13 @@ if(script != noone && position_meeting(mouse_gui_x,mouse_gui_y,id))
 	{	//Left button is being pressed
 		script_execute(script,aspect_argument);		
 	}
+	
+	if(mouse_check_button_released(mb_left))
+	{	//Left button is being pressed
+		draged = false;
+		x = xx + mouse_x;
+		y = yy + mouse_y;
+	}
 }
 else
 	image_index=0;

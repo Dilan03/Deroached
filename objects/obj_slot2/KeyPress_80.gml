@@ -1,3 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-//game_end();
+
+
+
+
+
+
+InventoryAdd(id,irandom(1));

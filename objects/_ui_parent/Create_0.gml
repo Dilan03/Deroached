@@ -37,6 +37,10 @@ enum VisualState
 	activating
 }
 state = VisualState.inactive;
+draged = false;
+
+xx = 0;
+yy = 0;
 
 length=15;
 timer=length;
