@@ -263,6 +263,7 @@
     {"name":"spr_AttachedWeapon_ShotGun","order":4,"path":"sprites/spr_AttachedWeapon_ShotGun/spr_AttachedWeapon_ShotGun.yy",},
     {"name":"sprPlayer","order":25,"path":"sprites/sprPlayer/sprPlayer.yy",},
     {"name":"EnemyTileCollision","order":5,"path":"scripts/EnemyTileCollision/EnemyTileCollision.yy",},
+    {"name":"sInventario","order":3,"path":"sprites/sInventario/sInventario.yy",},
     {"name":"sprAmountIcon","order":13,"path":"sprites/sprAmountIcon/sprAmountIcon.yy",},
     {"name":"sprJellyRed","order":5,"path":"sprites/sprJellyRed/sprJellyRed.yy",},
     {"name":"sprInventory","order":8,"path":"sprites/sprInventory/sprInventory.yy",},

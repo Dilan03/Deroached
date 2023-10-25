@@ -9,52 +9,81 @@ if (isShowingMenu) {
 	
 	//Back of the inventory
 	draw_set_alpha(1);
-	draw_sprite_ext( sprInventoryBackDrop, 0, oCamera.x-50, oCamera.y , 0.4, 0.4, 0, c_white, 1 );
+	draw_sprite_ext( sInventario, 0, oCamera.x-100, oCamera.y -80, 1, 1, 0, c_white, 1 );
 	//draw_sprite(sprInventoryBackDrop, 0, 0, 0);
 	
 	//Items
 	for(var i = 0; i < ds_grid_width(myItems); ++i) {
-		var itemX = oCamera.x + (i * itemSeperation);
-		var itemY = oCamera.y +40;
+		var itemX = oCamera.x - 82+ (i * itemSeperation);
+		var itemY = oCamera.y - 63;
 		var sprite = myItems[# i, Item.Sprite];
 		
 		//Check for additional rows needed
 		if (i >= menuWidth && i < menuWidth * 2) {
-			itemX = oCamera.x + ((i - menuWidth) * itemSeperation);
-			itemY = oCamera.y ;
+			itemX = oCamera.x -82 + ((i - menuWidth) * itemSeperation);
+			itemY = oCamera.y - 63 + (itemSeperation);
 		}
 		if (i >= menuWidth * 2 && i < menuWidth * 3) {
-			itemX = oCamera.x + ((i - menuWidth * 2) * itemSeperation);
-			itemY = oCamera.y + 15;
+			itemX = oCamera.x -82 +((i - menuWidth * 2) * itemSeperation);
+			itemY = oCamera.y -63 +(itemSeperation*2);
 		}
-		if(i >= 18 && i < menuWidth * 4) {
-			itemX = oCamera.x + ((i - menuWidth * 3) * itemSeperation);
-			itemY = oCamera.y + 30;
+		if(i >= menuWidth * 3 && i < menuWidth * 4) {
+			itemX = oCamera.x -82 +((i - menuWidth * 3) * itemSeperation);
+			itemY = oCamera.y - 63 + (itemSeperation*3);
 		}
-		if(i >= 24 && i < menuWidth * 5) {
-			itemX = oCamera.x + ((i - menuWidth * 4) * itemSeperation);
-			itemY = oCamera.y + 45;
+		if(i >= menuWidth * 4 && i < menuWidth * 5) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 4) * itemSeperation);
+			itemY = oCamera.y - 63 + (itemSeperation*4);
 		}
-		if(i >= 30 && i < menuWidth * 6) {
-			itemX = oCamera.x + ((i - menuWidth * 5) * itemSeperation);
-			itemY = oCamera.y + 60;
+		if(i >= menuWidth * 5 && i < menuWidth * 6) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 5) * itemSeperation);
+			itemY = oCamera.y - 63 + (itemSeperation*5);
 		}
-		if(i >= 36 && i < menuWidth * 7) {
-			itemX = oCamera.x + ((i - menuWidth * 6) * itemSeperation);
-			itemY = oCamera.y + 75;
+		if(i >= menuWidth * 6 && i < menuWidth * 7) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 6) * itemSeperation);
+			itemY = oCamera.y - 63 + (itemSeperation*6);
 		}
-		if(i >= 42 && i < menuWidth * 8) {
-			itemX = oCamera.x + ((i - menuWidth * 7) * itemSeperation);
-			itemY = oCamera.y + 90;
+		if(i >= menuWidth * 7 && i < menuWidth * 8) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 7) * itemSeperation);
+			itemY = oCamera.y - 63 + (itemSeperation*7);
 		}
 		
-		draw_sprite_ext(sprite, 0, itemX, itemY, 0.75, 0.75, 0, c_white, 1);
+		if(i == 16) {
+			itemX = oCamera.x + 15;
+			itemY = oCamera.y - 28;
+		}
+		
+		if(i == 17) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 8) * itemSeperation);
+			itemY = oCamera.y - 63 + (itemSeperation*8);
+		}
+		
+		/*
+		if(i >= 10 && i < menuWidth * 7) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 6) * itemSeperation);
+			itemY = oCamera.y + 65;
+		}
+		if(i >= 12 && i < menuWidth * 8) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 7) * itemSeperation);
+			itemY = oCamera.y + 80;
+		}
+		if(i >= 14 && i < menuWidth * 9) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 8) * itemSeperation);
+			itemY = oCamera.y + 95;
+		}
+		if(i >= 16 && i < menuWidth * 10) {
+			itemX = oCamera.x -82 + ((i - menuWidth * 9) * itemSeperation);
+			itemY = oCamera.y + 95;
+		}*/
+		
+		
+		draw_sprite_ext(sprite, 0, itemX, itemY, 0.9, 0.9, 0, c_white, 1);
 		
 		//Amount
-		draw_set_color(c_white);
+		draw_set_color(c_red);
 		draw_set_alpha(1);
 		draw_set_font(fntSmaller);
-		draw_text(itemX - 16, itemY + 4, myItems[# i, Item.Amount]);
+		draw_text(itemX - 2, itemY, myItems[# i, Item.Amount]);
 		
 		//Check if mouse is hovering over an item
 		if (point_in_rectangle(mouse_x, mouse_y, itemX - 4, itemY - 4, itemX + 4, itemY + 4)) {
@@ -175,7 +204,7 @@ if (isShowingMenu) {
 	}
 	
 	//Front of the inventory
-	draw_sprite_ext( sprInventoryFront, 0,oCamera.x-50, oCamera.y+7 , 0.4, 0.4, 0, c_white, 1 );
+	//draw_sprite_ext( sprInventoryFront, 0,oCamera.x-50, oCamera.y+7 , 0.4, 0.4, 0, c_white, 1 );
 	//draw_sprite(sprInventoryFront, 0, CameraX() + 175, CameraMiddleY() + 20);
 	
 	//Sort Type

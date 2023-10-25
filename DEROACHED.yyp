@@ -319,6 +319,7 @@
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
     {"id":{"name":"RoachChase","path":"scripts/RoachChase/RoachChase.yy",},},
     {"id":{"name":"EnemyTileCollision","path":"scripts/EnemyTileCollision/EnemyTileCollision.yy",},},
+    {"id":{"name":"sInventario","path":"sprites/sInventario/sInventario.yy",},},
     {"id":{"name":"sprAmountIcon","path":"sprites/sprAmountIcon/sprAmountIcon.yy",},},
     {"id":{"name":"sprJellyRed","path":"sprites/sprJellyRed/sprJellyRed.yy",},},
     {"id":{"name":"pTestPath","path":"paths/pTestPath/pTestPath.yy",},},
