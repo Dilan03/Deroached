@@ -38,10 +38,10 @@ switch(state)
 	}break;
 	
 	case VisualState.active:
-	{
+	{/*
 		x=active_pos[0];
 		y=active_pos[1];
-		image_alpha=1;
+		image_alpha=1;*/
 	}break;
 	
 	case VisualState.inactive:
@@ -56,6 +56,7 @@ switch(state)
 //Detect Clicks
 if (state != VisualState.active) exit;
 
+/*
 if(script != noone && position_meeting(mouse_gui_x,mouse_gui_y,id))
 {	//Moused Over with an existing script
 	image_index=1;
@@ -70,6 +71,6 @@ if(script != noone && position_meeting(mouse_gui_x,mouse_gui_y,id))
 		x = xx + mouse_x;
 		y = yy + mouse_y;
 	}
-}
+}*/
 else
 	image_index=0;
