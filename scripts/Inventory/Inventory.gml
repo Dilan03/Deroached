@@ -49,7 +49,7 @@ function AddItem(grid, attributes) {
 	}
 	
 	//Fifth Check - do I have space?
-	if (maxInventorySlots <= ds_grid_width(grid)) {
+	if (objController.maxInventorySlots <= ds_grid_width(grid)) {
 		return;
 	}
 	

@@ -18,6 +18,9 @@ if (isShowingMenu) {
 		var itemY = oCamera.y - 63;
 		var sprite = myItems[# i, Item.Sprite];
 		
+		//var string1 = string_concat(i,myItems[# i, Item.Name] );
+		//show_debug_message(string1);
+		
 		//Check for additional rows needed
 		if (i >= menuWidth && i < menuWidth * 2) {
 			itemX = oCamera.x -82 + ((i - menuWidth) * itemSeperation);
@@ -53,34 +56,15 @@ if (isShowingMenu) {
 			itemY = oCamera.y - 28;
 		}
 		
-		if(i == 17) {
-			itemX = oCamera.x -82 + ((i - menuWidth * 8) * itemSeperation);
-			itemY = oCamera.y - 63 + (itemSeperation*8);
+		if(i == 17 && myItems[# i, Item.Type] == Type.Weapon) {
+			itemX = oCamera.x - 25;
+			itemY = oCamera.y + 20;
 		}
-		
-		/*
-		if(i >= 10 && i < menuWidth * 7) {
-			itemX = oCamera.x -82 + ((i - menuWidth * 6) * itemSeperation);
-			itemY = oCamera.y + 65;
-		}
-		if(i >= 12 && i < menuWidth * 8) {
-			itemX = oCamera.x -82 + ((i - menuWidth * 7) * itemSeperation);
-			itemY = oCamera.y + 80;
-		}
-		if(i >= 14 && i < menuWidth * 9) {
-			itemX = oCamera.x -82 + ((i - menuWidth * 8) * itemSeperation);
-			itemY = oCamera.y + 95;
-		}
-		if(i >= 16 && i < menuWidth * 10) {
-			itemX = oCamera.x -82 + ((i - menuWidth * 9) * itemSeperation);
-			itemY = oCamera.y + 95;
-		}*/
-		
 		
 		draw_sprite_ext(sprite, 0, itemX, itemY, 0.9, 0.9, 0, c_white, 1);
 		
 		//Amount
-		draw_set_color(c_red);
+		draw_set_color(c_blue);
 		draw_set_alpha(1);
 		draw_set_font(fntSmaller);
 		draw_text(itemX - 2, itemY, myItems[# i, Item.Amount]);
@@ -107,7 +91,8 @@ if (isShowingMenu) {
 			
 			//Clicked on an item
 			if (mouse_check_button_pressed(mb_left) && showingDescription == false) {
-				sequence = layer_sequence_create("Instances", CameraMiddleX(), CameraMiddleY(), sqDescriptionAnimation);
+				draw_sprite_ext( sprDescription, 0, oCamera.x-100, oCamera.y -80, 0.3, 0.3, 0, c_white, 1 );
+				//sequence = layer_sequence_create("Instances", oCamera.x +30, oCamera.y, sqDescriptionAnimation);
 			}
 			//Lock Item
 			if (mouse_check_button_pressed(mb_right) && itemLocked == false && showingDescription == true) {
@@ -142,13 +127,25 @@ if (isShowingMenu) {
 	if (mouse_check_button_pressed(mb_middle)) {
 		draggedItemSlot = currentItemSlot;
 	}
+	
 	if (mouse_check_button_released(mb_middle)) {
 		draggedItem.x = -100;
 		draggedItem.y = -100;
 		draggingItem = false;
-		alarm[0] = 1;
+		var _draggetType = draggedItem.type;
+		var _currentType = currentItem.type;
+		
+		if (_draggetType == 0 and currentItemSlot == 17) {
+			alarm[0] = 1;
+		} 
+		
+		if (_draggetType == 1 and currentItemSlot == 16) {
+			show_debug_message("Igual");
+			alarm[0] = 1;
+		} 
+		
 	}
-	
+	/*
 	//Exit description
 	if (point_in_rectangle(mouse_x, mouse_y, CameraX() + 580, CameraY() + 35, CameraX() + 620, CameraY() + 70) == true) {
 		if(mouse_check_button_pressed(mb_left)) {
@@ -157,13 +154,13 @@ if (isShowingMenu) {
 			showingDescription = false;
 			instance_destroy(objItemParent);
 		}
-	}
+	}*/
 	
 	//Ensure only 1 item exists at a time
 	if (instance_number(objItemParent) > 1) {
 		instance_destroy(objItemParent);
 	}
-	
+	/*
 	//Locked Item Slots
 	for(var i = maxInventorySlots; i < menuHeight * menuWidth; ++i) {
 		var itemX = oCamera.x + (i * itemSeperation);
@@ -201,7 +198,7 @@ if (isShowingMenu) {
 		}
 		
 		draw_sprite_ext(sprite, 0, itemX, itemY, 0.3, 0.3, 0, c_white, 1);
-	}
+	}*/
 	
 	//Front of the inventory
 	//draw_sprite_ext( sprInventoryFront, 0,oCamera.x-50, oCamera.y+7 , 0.4, 0.4, 0, c_white, 1 );

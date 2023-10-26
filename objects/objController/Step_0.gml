@@ -3,11 +3,9 @@
 if (keyboard_check_pressed(ord("M"))) {
 	if (isShowingMenu == true) {
 		isShowingMenu = false;
-		if (sequence != undefined) {
-			layer_sequence_destroy(sequence);
-			instance_destroy(objItemParent);
-			showingDescription = false;
-		}
+
+		//showingDescription = false;
+
 	}
 	else {
 		isShowingMenu = true;
@@ -27,8 +25,8 @@ if (isShowingMenu) {
 }
 
 //Animations
-if (sequence != undefined && layer_sequence_is_finished(sequence) && layer_sequence_get_headdir(sequence) == seqdir_right) {
-	showingDescription = true;
+if (sequence != undefined) {
+	//showingDescription = true;
 	if (instance_exists(objItemParent) == true) {
 		currentItem.isShowingInfo = true;
 	}
