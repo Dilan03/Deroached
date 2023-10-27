@@ -70,20 +70,20 @@ if (isShowingMenu) {
 		draw_text(itemX - 2, itemY, myItems[# i, Item.Amount]);
 		
 		//Check if mouse is hovering over an item
-		if (point_in_rectangle(mouse_x, mouse_y, itemX - 4, itemY - 4, itemX + 4, itemY + 4)) {
-			
+		if (point_in_rectangle(mouse_x, mouse_y, itemX - 5, itemY - 5, itemX + 5, itemY + 5)) {
+			onItem = true;
 			draw_set_alpha(0.25);
 			draw_set_color(c_blue);
-			draw_rectangle(itemX - 4, itemY - 4, itemX + 4, itemY + 4, false);
+			draw_rectangle(itemX - 5, itemY - 5, itemX + 5, itemY + 5, false);
 			draw_set_alpha(1);
 			currentItemSlot = i;
 			
 			//Draw item info
-			 if (instance_exists(myItems[# i, Item.Object]) == false && draggingItem == false && itemLocked == false ) {
-				currentItem = instance_create_layer(oCamera.x + 90, oCamera.y + 50, "MenuItems", myItems[# i, Item.Object]);
-				currentItem.price = myItems[# i, Item.Price];
-				currentItem.type = myItems[# i, Item.Type];
-				currentItem.name = myItems[# i, Item.Name];
+			if (instance_exists(myItems[# itemTouched, Item.Object]) == false && draggingItem == false) {
+				currentItem = instance_create_layer(oCamera.x + 90, oCamera.y + 50, "MenuItems", myItems[# itemTouched, Item.Object]);
+				currentItem.price = myItems[# itemTouched, Item.Price];
+				currentItem.type = myItems[# itemTouched, Item.Type];
+				currentItem.name = myItems[# itemTouched, Item.Name];
 				currentItem.isInMenu = true;
 				
 				if (showingDescription ) {
@@ -93,6 +93,10 @@ if (isShowingMenu) {
 			
 			if (mouse_check_button(mb_left)) {
 				itemTouched = currentItemSlot
+				itemLocked = true;
+				
+				lockedItemX = itemX;
+				lockedItemY = itemY;
 				showingDescription = true;
 				if (instance_exists(objItemParent) == true) {
 					currentItem.isShowingInfo = true;
@@ -109,11 +113,18 @@ if (isShowingMenu) {
 			else if (mouse_check_button_pressed(mb_right) && itemLocked == true) {
 				itemLocked = false;
 			}*/
+		} else {
+			onItem = false;
 		}
 		
-		if (point_in_rectangle(mouse_x, mouse_y, oCamera.x, oCamera.y, oCamera.x + 50, oCamera.y + 50)) {
+		if (point_in_rectangle(mouse_x, mouse_y, oCamera.x, oCamera.y, oCamera.x + 20, oCamera.y + 20)) {
+			draw_set_alpha(0.25);
+			draw_set_color(c_blue);
+			draw_rectangle(oCamera.x, oCamera.y, oCamera.x + 20, oCamera.y + 20, false);
+			draw_set_alpha(1);
 			if(mouse_check_button_pressed(mb_left)) {
 				showingDescription = false;
+				itemLocked = false;
 				instance_destroy(objItemParent);
 			}
 		} 
@@ -129,12 +140,12 @@ if (isShowingMenu) {
 	if (itemLocked == true) {
 		draw_set_alpha(0.5);
 		draw_set_color(c_red);
-		draw_rectangle(lockedItemX - 16, lockedItemY - 16, lockedItemX + 16, lockedItemY + 16, false);
+		draw_rectangle(lockedItemX - 5, lockedItemY - 5, lockedItemX + 5, lockedItemY + 5, false);
 		draw_set_alpha(1);
 	}
 	
 	//Dragging System
-	if (mouse_check_button(mb_middle)) {
+	if (mouse_check_button(mb_middle) and itemLocked = true ) {
 		draggedItem = instance_find(objItemParent, 0);
 		draggedItem.x = mouse_x;
 		draggedItem.y = mouse_y;
@@ -143,11 +154,12 @@ if (isShowingMenu) {
 		draggedItem.image_yscale = itemScale;
 		draggingItem = true;
 	}
-	if (mouse_check_button_pressed(mb_middle)) {
-		draggedItemSlot = currentItemSlot;
+	
+	if (mouse_check_button_pressed(mb_middle) and itemLocked = true ) {
+		draggedItemSlot = itemTouched;
 	}
 	
-	if (mouse_check_button_released(mb_middle)) {
+	if (mouse_check_button_released(mb_middle) and itemLocked = true) {
 		draggedItem.x = -100;
 		draggedItem.y = -100;
 		draggingItem = false;
@@ -217,6 +229,8 @@ if (isShowingMenu) {
 	//draw_sprite(sprInventoryFront, 0, CameraX() + 175, CameraMiddleY() + 20);
 	
 	//Sort Type
+	
+	/*
 	draw_set_alpha(1);
 	draw_set_color(c_white);
 	draw_set_font(fntSmaller);
@@ -232,11 +246,18 @@ if (isShowingMenu) {
 	if (sortType == SortType.Type) {
 		draw_text(CameraX() + 75, CameraY() + 425, "Sorting by Type");
 	}
+	*/
 	
+	
+	/*
 	//Press Button
-	if (point_in_rectangle(mouse_x, mouse_y, CameraX() + 440, CameraY() + 435, CameraX() + 520, CameraY() + 470) == true && mouse_check_button_pressed(mb_left)) {
+	if (point_in_rectangle(mouse_x, mouse_y, oCamera.x, oCamera.y+50, oCamera.x + 20, oCamera.y + 20)) {
+		draw_set_alpha(0.25);
+		draw_set_color(c_orange);
+		draw_rectangle(oCamera.x, oCamera.y+50, oCamera.x + 20, oCamera.y + 20, false);
+		draw_set_alpha(1);
 		show_message("Button pressed.");
-	}
+	}*/
 }
 
 

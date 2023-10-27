@@ -18,6 +18,7 @@ draggingItem = false;
 draggedItemSlot = undefined;
 itemTouched = 0;
 maxInventorySlots = 18;
+onItem = false;
 
 itemLocked = false;
 lockedItemX = undefined;
