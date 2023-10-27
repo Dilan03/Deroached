@@ -16,7 +16,7 @@ sortType = SortType.Name;
 draggedItem = undefined;
 draggingItem = false;
 draggedItemSlot = undefined;
-
+itemTouched = 0;
 maxInventorySlots = 18;
 
 itemLocked = false;
@@ -33,7 +33,11 @@ AddItem(myItems, ["Small Knife", sprKnife, 1, Type.Weapon, 10, objKnife]);
 
 AddItem(myItems, ["Pretty Teal Bow", sprBowTeal, 1, Type.Armor, 100, objBowTeal]);
 AddItem(myItems, ["Mage's Staff", sprStaff, 5, Type.Weapon, 100, objStaff]);
+AddItem(myItems, ["Mage's Staff", sprStaff, 1, Type.Weapon, 100, objStaff]);
+AddItem(myItems, ["Mage's Staff", sprStaff, 1, Type.Weapon, 100, objStaff]);
 AddItem(myItems, ["Fluffy Cape", sprCape, 2, Type.Armor, 200, objCape]);
 
+AddItem(myItems, ["Legendary Crystal Armor", sprCrystalArmor, 1, Type.Armor, 5000, objArmorCrystal]);
+AddItem(myItems, ["Broad Sword", sprSword, 1, Type.Weapon, 50, objSword]);
 //AddItem(myItems, ["Pretty Teal Bow", sprBowTeal, 1, Type.Armor, 100, objBowTeal]);
 //AddItem(myItems, ["Blue Jelly", sprJellyBlue, 2, Type.Consumable, 20, objJellyBlue]);

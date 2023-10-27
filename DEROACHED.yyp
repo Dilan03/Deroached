@@ -28,6 +28,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"HMTestEnemy","folderPath":"folders/Objects/Entities/Enemies/HMTestEnemy.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gameplay_Control","folderPath":"folders/Objects/Gameplay_Control.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Objects/Items.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pickableitems","folderPath":"folders/Objects/Items/Pickableitems.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Managers","folderPath":"folders/Objects/Managers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Placeables","folderPath":"folders/Objects/Placeables.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Objects/Player.yy",},
@@ -69,7 +70,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Testing","folderPath":"folders/Tile Sets/Testing.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pickableitems","folderPath":"folders/Objects/Items/Pickableitems.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.json","CopyToMask":-1,"filePath":"datafiles/langs",},

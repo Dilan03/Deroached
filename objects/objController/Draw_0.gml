@@ -71,6 +71,7 @@ if (isShowingMenu) {
 		
 		//Check if mouse is hovering over an item
 		if (point_in_rectangle(mouse_x, mouse_y, itemX - 4, itemY - 4, itemX + 4, itemY + 4)) {
+			
 			draw_set_alpha(0.25);
 			draw_set_color(c_blue);
 			draw_rectangle(itemX - 4, itemY - 4, itemX + 4, itemY + 4, false);
@@ -78,22 +79,27 @@ if (isShowingMenu) {
 			currentItemSlot = i;
 			
 			//Draw item info
-			if (instance_exists(myItems[# i, Item.Object]) == false && draggingItem == false && itemLocked == false) {
-				currentItem = instance_create_layer(-32, -32, "MenuItems", myItems[# i, Item.Object]);
+			 if (instance_exists(myItems[# i, Item.Object]) == false && draggingItem == false && itemLocked == false ) {
+				currentItem = instance_create_layer(oCamera.x + 90, oCamera.y + 50, "MenuItems", myItems[# i, Item.Object]);
 				currentItem.price = myItems[# i, Item.Price];
 				currentItem.type = myItems[# i, Item.Type];
 				currentItem.name = myItems[# i, Item.Name];
 				currentItem.isInMenu = true;
-				if (showingDescription) {
+				
+				if (showingDescription ) {
 					currentItem.isShowingInfo = true;
 				}
 			}
 			
-			//Clicked on an item
-			if (mouse_check_button_pressed(mb_left) && showingDescription == false) {
-				draw_sprite_ext( sprDescription, 0, oCamera.x-100, oCamera.y -80, 0.3, 0.3, 0, c_white, 1 );
-				//sequence = layer_sequence_create("Instances", oCamera.x +30, oCamera.y, sqDescriptionAnimation);
+			if (mouse_check_button(mb_left)) {
+				itemTouched = currentItemSlot
+				showingDescription = true;
+				if (instance_exists(objItemParent) == true) {
+					currentItem.isShowingInfo = true;
+				}
 			}
+			//Clicked on an item
+			/*
 			//Lock Item
 			if (mouse_check_button_pressed(mb_right) && itemLocked == false && showingDescription == true) {
 				itemLocked = true;
@@ -102,7 +108,20 @@ if (isShowingMenu) {
 			}
 			else if (mouse_check_button_pressed(mb_right) && itemLocked == true) {
 				itemLocked = false;
+			}*/
+		}
+		
+		if (point_in_rectangle(mouse_x, mouse_y, oCamera.x, oCamera.y, oCamera.x + 50, oCamera.y + 50)) {
+			if(mouse_check_button_pressed(mb_left)) {
+				showingDescription = false;
+				instance_destroy(objItemParent);
 			}
+		} 
+		
+		
+		if (showingDescription) {
+			draw_sprite_ext( sprDescription, 0, oCamera.x+100, oCamera.y, 0.3, 0.3, 0, c_white, 1 );
+			//sequence = layer_sequence_create("Instances", oCamera.x +30, oCamera.y, sqDescriptionAnimation);
 		}
 	}
 	
@@ -145,16 +164,9 @@ if (isShowingMenu) {
 		} 
 		
 	}
-	/*
+	
 	//Exit description
-	if (point_in_rectangle(mouse_x, mouse_y, CameraX() + 580, CameraY() + 35, CameraX() + 620, CameraY() + 70) == true) {
-		if(mouse_check_button_pressed(mb_left)) {
-			layer_sequence_headdir(sequence, seqdir_left);
-			layer_sequence_play(sequence);
-			showingDescription = false;
-			instance_destroy(objItemParent);
-		}
-	}*/
+
 	
 	//Ensure only 1 item exists at a time
 	if (instance_number(objItemParent) > 1) {
@@ -209,7 +221,7 @@ if (isShowingMenu) {
 	draw_set_color(c_white);
 	draw_set_font(fntSmaller);
 	if (sortType == SortType.Name) {
-		draw_text(CameraX() + 75, CameraY() + 425, "Sorting by Name");
+		draw_text(oCamera.x, oCamera.y, "Sorting by Name");
 	}
 	if (sortType == SortType.Amount) {
 		draw_text(CameraX() + 75, CameraY() + 425, "Sorting by Amount");

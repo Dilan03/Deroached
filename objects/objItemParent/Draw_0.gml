@@ -1,17 +1,20 @@
 /// @description Draw Info
-draw_self();
+if(objController.draggingItem) {
+	draw_self();
+}
 
 //Info for when displaying description sprite
 if (isShowingInfo == true) {
+	draw_self();
 	draw_set_alpha(1);
 	//Name
 	draw_set_font(fntSmaller);
 	draw_set_color(c_red);
-	draw_text_ext(CameraMiddleX() + 60, CameraY() + 125, name, 20, textWidth + 15);
+	draw_text_ext(oCamera.x + 63, oCamera.y -40, name, 10, 70);
 	//Description
 	draw_set_font(fntLarger);
 	draw_set_color(c_black);
-	draw_text_ext(CameraMiddleX() + 60, CameraMiddleY() - 75, description, 20, textWidth);
+	draw_text_ext(oCamera.x + 63, oCamera.y -20, description, 10, 70);
 	//Attributes
 	if (damage != undefined) {
 		draw_sprite_ext(sprSwordIcon, 0, CameraX() + 395, CameraY() + 340,
