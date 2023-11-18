@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oEnemyMaskedGoon",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEntityParent","path":"objects/oEntityParent/oEntityParent.yy",},"propertyId":{"name":"maxHP","path":"objects/oEntityParent/oEntityParent.yy",},"value":"50",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEntityParent","path":"objects/oEntityParent/oEntityParent.yy",},"propertyId":{"name":"name","path":"objects/oEntityParent/oEntityParent.yy",},"value":"\"Masked Goon\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEntityParent","path":"objects/oEntityParent/oEntityParent.yy",},"propertyId":{"name":"attack","path":"objects/oEntityParent/oEntityParent.yy",},"value":"50",},
+  ],
+  "parent": {
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
+  },
+  "parentObjectId": {
+    "name": "oEnemyParentDD",
+    "path": "objects/oEnemyParentDD/oEnemyParentDD.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "sMaskedGoon_Down_Idle",
+    "path": "sprites/sMaskedGoon_Down_Idle/sMaskedGoon_Down_Idle.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}
