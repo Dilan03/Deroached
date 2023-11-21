@@ -7,8 +7,8 @@ menu_open = false;
 
 
 #region sprites
-	sprite_Walk = sPlayerWalk;
-	sprite_Idle = sPlayerIdle;
+	sprite_Walk = sRoachBit_Walk;
+	sprite_Idle = sRoachBit_idle;
 #endregion
 
 #region weapon

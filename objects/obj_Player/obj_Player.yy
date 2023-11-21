@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sPlayerWalk",
-    "path": "sprites/sPlayerWalk/sPlayerWalk.yy",
+    "name": "sRoachBit_Walk",
+    "path": "sprites/sRoachBit_Walk/sRoachBit_Walk.yy",
   },
   "spriteMaskId": {
     "name": "spr_MaskPlayer",
