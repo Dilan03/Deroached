@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "throwWeapon",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Player",
-    "path": "folders/Scripts/Gameplay/Player.yy",
+  "$GMScript":"",
+  "%Name":"throwWeapon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"throwWeapon",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/Gameplay/Player.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

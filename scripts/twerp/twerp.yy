@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "twerp",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Helpers",
-    "path": "folders/Scripts/Helpers.yy",
+  "$GMScript":"",
+  "%Name":"twerp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"twerp",
+  "parent":{
+    "name":"Helpers",
+    "path":"folders/Scripts/Helpers.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

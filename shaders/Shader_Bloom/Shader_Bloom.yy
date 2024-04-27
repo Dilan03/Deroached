@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
-  "name": "Shader_Bloom",
-  "parent": {
-    "name": "TitleScreen",
-    "path": "folders/Objects/TitleScreen.yy",
+  "$GMShader":"",
+  "%Name":"Shader_Bloom",
+  "name":"Shader_Bloom",
+  "parent":{
+    "name":"TitleScreen",
+    "path":"folders/Objects/TitleScreen.yy",
   },
-  "type": 1,
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

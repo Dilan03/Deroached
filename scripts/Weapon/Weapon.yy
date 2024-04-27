@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Weapon",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Constructors",
-    "path": "folders/Scripts/Constructors.yy",
+  "$GMScript":"",
+  "%Name":"Weapon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Weapon",
+  "parent":{
+    "name":"Constructors",
+    "path":"folders/Scripts/Constructors.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

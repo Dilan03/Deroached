@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "pickupWeapon",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Player",
-    "path": "folders/Scripts/Gameplay/Player.yy",
+  "$GMScript":"",
+  "%Name":"pickupWeapon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"pickupWeapon",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/Gameplay/Player.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

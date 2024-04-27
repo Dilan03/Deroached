@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.playerHealthMax = 100;
+global.playerHealth = global.playerHealthMax;
 debug = false;
 menu_open=false;
 alarm[0] = 1;

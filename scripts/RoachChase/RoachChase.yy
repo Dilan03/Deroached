@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "RoachChase",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "RoachEnemy",
-    "path": "folders/Scripts/RoachEnemy.yy",
+  "$GMScript":"",
+  "%Name":"RoachChase",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RoachChase",
+  "parent":{
+    "name":"RoachEnemy",
+    "path":"folders/Scripts/RoachEnemy.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

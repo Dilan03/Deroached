@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "SlimeChase",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Slime",
-    "path": "folders/Scripts/Slime.yy",
+  "$GMScript":"",
+  "%Name":"SlimeChase",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SlimeChase",
+  "parent":{
+    "name":"Slime",
+    "path":"folders/Scripts/Slime.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

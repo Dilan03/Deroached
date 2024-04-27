@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "CopyRight",
-  "parent": {
-    "name": "DEROACHED",
-    "path": "DEROACHED.yyp",
+  "$GMNotes":"",
+  "%Name":"CopyRight",
+  "name":"CopyRight",
+  "parent":{
+    "name":"DEROACHED",
+    "path":"DEROACHED.yyp",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }
