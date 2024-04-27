@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Shot_Enemy",
+  "%Name":"obj_Shot_Enemy_Pistol",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -11,7 +11,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Shot_Enemy",
+  "name":"obj_Shot_Enemy_Pistol",
   "overriddenProperties":[],
   "parent":{
     "name":"Shoots_by_enemy",

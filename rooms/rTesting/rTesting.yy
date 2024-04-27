@@ -19,6 +19,8 @@
     {"name":"inst_5845A97D","path":"rooms/rTesting/rTesting.yy",},
     {"name":"inst_2AC2137E","path":"rooms/rTesting/rTesting.yy",},
     {"name":"inst_3E2E96D8","path":"rooms/rTesting/rTesting.yy",},
+    {"name":"inst_71C5E28C","path":"rooms/rTesting/rTesting.yy",},
+    {"name":"inst_4367C664","path":"rooms/rTesting/rTesting.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -43,6 +45,8 @@
         {"$GMRInstance":"","%Name":"inst_681F4A95","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_681F4A95","objectId":{"name":"obj_enemy_Red","path":"objects/obj_enemy_Red/obj_enemy_Red.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":248.0,"y":304.0,},
         {"$GMRInstance":"","%Name":"inst_2AC2137E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2AC2137E","objectId":{"name":"obj_enemy_Red","path":"objects/obj_enemy_Red/obj_enemy_Red.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":384.0,},
         {"$GMRInstance":"","%Name":"inst_3E2E96D8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E2E96D8","objectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":280.0,},
+        {"$GMRInstance":"","%Name":"inst_71C5E28C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71C5E28C","objectId":{"name":"obj_UI","path":"objects/obj_UI/obj_UI.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":24.0,},
+        {"$GMRInstance":"","%Name":"inst_4367C664","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4367C664","objectId":{"name":"obj_enemy_Red_pistol","path":"objects/obj_enemy_Red_pistol/obj_enemy_Red_pistol.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":248.0,"y":168.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Col","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Col","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":45,"SerialiseWidth":80,"TileCompressedData":[
           -25,1,-34,-2147483648,-18,1,-3,-2147483648,-25,1,-34,-2147483648,-18,1,-3,-2147483648,-25,1,-34,-2147483648,

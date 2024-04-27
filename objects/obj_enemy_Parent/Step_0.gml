@@ -138,7 +138,7 @@ image_angle_ = point_direction(x,y, obj_Player.x, obj_Player.y );
 				 shotX = x + lengthdir_x(12, image_angle_-25);    
 				 shotY = y + lengthdir_y(12, image_angle_-25);  
 		
-			 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Enemy);
+			 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Enemy_Pistol);
 				    shot.damage    = obj_Control.damage_Pistol;
 				    shot.speed     = obj_Control.ShotSpeed_Pistol;
 				    shot.friction  = obj_Control.friction_Pistol;

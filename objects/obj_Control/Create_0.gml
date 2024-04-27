@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.playerHealthMax = 100;
-global.playerHealth = global.playerHealthMax;
+
 debug = false;
+UIDraw = true;
 menu_open=false;
 alarm[0] = 1;
-
+//global.iUI = instance_create_layer(0,0, layer, obj_UI);
 //Weapon(_x_shot_org, _x_shot_ang, _damage, _shot_speed, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle)
 
 //pistol = new Weapon(_x_shot_org, _x_shot_ang,1, 6, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
@@ -36,7 +36,7 @@ smg = new Weapon(	_smg_struct.x_shot_org,
 //mg = new Weapon(_x_shot_org, _x_shot_ang, 1, 7, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
 // values of weapons
 damage_Knife = 1;
-damage_Pistol = 1;
+damage_Pistol = 2;
 damage_Smg = 1;
 damage_Uzi = 1;
 damage_Aka = 1;

@@ -13,7 +13,7 @@ function movePlayer(){
 	
 		var result_h = (_horizontal_Speed) * (walkSpeed);
 		var result_v = (_vertical_Speed)   * (walkSpeed);
-		show_debug_message(_horizontal_Speed);
+	
 	
 		if (_key_Left > 0 or _key_Right > 0 or _key_Up == 1 or _key_Down == 1) { control = "keyboard";  }
 	

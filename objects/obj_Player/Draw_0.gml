@@ -18,14 +18,16 @@ draw_set_alpha(0.5);
 draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red, c_red, c_red, 0);
 draw_set_alpha(0.5);*/
 // debug checking
-if (obj_Control.debug == true) {
+if (obj_Control.UIDraw == true) {
 	draw_set_halign(fa_center);
 
  var text_1 = "Ammo: " + string(ammo);
-draw_text_transformed(x,y-40, text_1, 1,1, 0 );
+ draw_set_alpha(1);
+ draw_text_transformed(oCamera.x-20,oCamera.y+70, text_1, 1,1, 0 );
 
  var text_2 = weapon;
-//  draw_text_transformed(x,y-60, text_2, 1,1, 0 );
+ draw_set_alpha(1);
+ draw_text_transformed(oCamera.x-20,oCamera.y+50, text_2, 1,1, 0 );
 
 //draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, 1);
 //draw_set_alpha(0.5);

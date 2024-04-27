@@ -32,10 +32,11 @@ if (state == "idle")         { aggroState = false; sprite_index = sprite_Aggro; 
 // debugging
 
 if (obj_Control.debug == true) {
+	/*
 draw_set_alpha(0.4);
 draw_circle_color(position_Start_X , position_Start_Y , 3, c_orange, c_orange, 0);
 draw_circle_color(position_Target_X, position_Target_Y, 3, c_red,   c_red,   0);
-draw_set_alpha(1);
+draw_set_alpha(0.1);
 
 
 draw_text(x,y+ 50, ai_I_See_you);
@@ -45,10 +46,10 @@ draw_set_alpha(0.1);
 draw_circle_color(x,y,attackRange, c_red, c_red, 0 );
 
 draw_circle_color(x,y,attackRangeBreak, c_blue, c_blue, 0 );
-draw_set_alpha(1);
-
-draw_set_alpha(0.5);
-draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red, c_red, c_red, 0);
+draw_set_alpha(0.1);
+*/
+//draw_set_alpha(0.5);
+//draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red, c_red, c_red, 0);
 draw_set_alpha(0.5);
 
 //draw_line_width_color(x,y, x + lengthdir_x(sightMAX,image_angle_ ), y + lengthdir_y(sightMAX,image_angle_ ) , 1.5, c_purple,c_purple  );
@@ -64,7 +65,7 @@ var get_lineBelow_X = x + lengthdir_x(lineLength, image_angle_ +angleDiff);
 var get_lineBelow_Y = y + lengthdir_y(lineLength, image_angle_ +angleDiff);
 
  draw_line_width_color(x,y,get_lineMiddle_X, get_lineMiddle_Y, 2, c_orange, c_orange);
- draw_line_width_color(x,y,get_lineAbove_X, get_lineAbove_Y, 1, c_blue,c_blue);
- draw_line_width_color(x,y,get_lineBelow_X, get_lineBelow_Y, 1, c_blue,c_blue);
+ draw_line_width_color(x,y,get_lineAbove_X, get_lineAbove_Y, 1, c_red,c_red);
+ draw_line_width_color(x,y,get_lineBelow_X, get_lineBelow_Y, 1, c_red,c_red);
 
 }
