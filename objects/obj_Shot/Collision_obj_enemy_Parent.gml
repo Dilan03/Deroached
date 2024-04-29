@@ -1,5 +1,9 @@
 instance_create_layer(x,y, "Instances", obj_Effect_Hit );
 
-instance_destroy(other.id); // destroy enemy
+if(other.id.enemy_healt > 1) {	 
+	other.id.enemy_healt -= 1;
+}else {
+	instance_destroy(other.id);// destroy enemy
+}
 
 instance_destroy(); // destroy shot

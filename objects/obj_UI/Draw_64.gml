@@ -1,13 +1,66 @@
 /// @description Draw Health
 var _playerHealth = global.playerHealth;
+//_playerHealth = 90;
 var _playerHealthMax = global.playerHealthMax;
 
 //_playerHealth -= _playerHealthFrac;
 
-show_debug_message(_playerHealth);
-if(_playerHealth = 3) {
-	draw_sprite(sRoachBit_idle, 0, 16, 8);
-}
+//show_debug_message(_playerHealth);
+if(_playerHealth <= 100 and _playerHealth >= 90) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 0, 0, 132);
+} 
+
+if(_playerHealth <= 89 and _playerHealth >= 80) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 1, 0, 132);
+} 
+
+if(_playerHealth <= 79 and _playerHealth >= 70) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 2, 0, 132);
+} 
+
+if(_playerHealth <= 69 and _playerHealth >= 60) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 3, 0, 132);
+} 
+
+if(_playerHealth <= 59 and _playerHealth >= 50) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 4, 0, 132);
+} 
+
+if(_playerHealth <= 49 and _playerHealth >= 40) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 5, 0, 132);
+} 
+
+if(_playerHealth <= 39 and _playerHealth >= 30) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 6, 0, 132);
+} 
+
+if(_playerHealth <= 29 and _playerHealth >= 20) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 7, 0, 132);
+} 
+
+if(_playerHealth <= 19 and _playerHealth >= 10) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 8, 0, 132);
+} 
+
+if(_playerHealth <= 9 and _playerHealth >= 1) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 9, 0, 132);
+} 
+
+if(_playerHealth <= 0) {
+	draw_set_alpha(1);
+	draw_sprite(sHealth_faces, 10, 0, 132);
+} 
+
 
 
 var _UI_health = _playerHealth;

@@ -32,16 +32,18 @@ if (state == "idle")         { aggroState = false; sprite_index = sprite_Aggro; 
 // debugging
 
 if (obj_Control.debug == true) {
-	/*
+/*
 draw_set_alpha(0.4);
 draw_circle_color(position_Start_X , position_Start_Y , 3, c_orange, c_orange, 0);
 draw_circle_color(position_Target_X, position_Target_Y, 3, c_red,   c_red,   0);
 draw_set_alpha(0.1);
+*/
 
-
+draw_set_alpha(1);
 draw_text(x,y+ 50, ai_I_See_you);
 draw_text(x,y- 20, image_angle_);
-
+draw_text(x,y- 10, enemy_healt);
+/*
 draw_set_alpha(0.1);
 draw_circle_color(x,y,attackRange, c_red, c_red, 0 );
 

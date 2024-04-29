@@ -57,6 +57,7 @@
     {"name":"Testing","order":1,"path":"folders/Sprites/Tiles/Testing.yy",},
     {"name":"TitleScreen","order":16,"path":"folders/Sprites/TitleScreen.yy",},
     {"name":"UI","order":3,"path":"folders/Sprites/UI.yy",},
+    {"name":"Health","order":14,"path":"folders/Sprites/UI/Health.yy",},
     {"name":"Main_Menu","order":1,"path":"folders/Sprites/UI/Main_Menu.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Testing","order":1,"path":"folders/Tile Sets/Testing.yy",},

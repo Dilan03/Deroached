@@ -2,6 +2,7 @@ image_speed = 0;
 aggroState = false; // is trigger when attacking and chasing, then enemy carry a weapon
 image_angle_ = 0;
 localFrame = 0;
+enemy_healt = 10;
 
 #region weapon
 	weapon_sprite = spr_Nothing;
