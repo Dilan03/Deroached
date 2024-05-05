@@ -4,7 +4,7 @@ ammoLeft = 0;
 
 
 spin = 10;
-friction = 0.4; 
+friction = 0.5; 
 
 
 image_alpha = 0;

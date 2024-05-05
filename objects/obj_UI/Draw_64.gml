@@ -61,11 +61,47 @@ if(_playerHealth <= 0) {
 	draw_sprite(sHealth_faces, 10, 0, 132);
 } 
 
+	//draw_set_halign(fa_center);
 
+
+/*
+var text_2 = obj_Player.weapon;
+draw_set_alpha(1);
+draw_text_transformed(20,50, text_2, 1,1, 0 );*/
+var text_1 = string(obj_Player.ammo);
+draw_set_alpha(1);
+draw_text_transformed(295,164, text_1, 0.7,0.7, 0 );
+ 
+if(obj_Player.weapon == "smg") {
+	draw_sprite_ext(spr_Pickup_Smg, 0, 290,157, 1.8,1.8,0,-1,1);
+}
+
+if(obj_Player.weapon == "uzi") {
+	draw_sprite_ext(spr_Pickup_Uzi, 0, 290,157, 1.8,1.8,0,-1,1);
+}
+
+if(obj_Player.weapon == "pistol") {
+	draw_sprite_ext(spr_Pickup_Pistol, 0, 290,157, 1.8,1.8,0,-1,1);
+}
+
+if(obj_Player.weapon == "mg") {
+	draw_sprite_ext(spr_Pickup_Mg, 0, 290,157, 1.8,1.8,0,-1,1);
+}
+
+if(obj_Player.weapon == "aka") {
+	draw_sprite_ext(spr_Pickup_Aka, 0, 290,157, 1.8,1.8,0,-1,1);
+}
+
+if(obj_Player.weapon == "shotgun") {
+	draw_sprite_ext(spr_Pickup_Shotgun, 0, 290,157, 1.8,1.8,0,-1,1);
+}
 
 var _UI_health = _playerHealth;
 draw_set_alpha(1);
-draw_text_transformed(20,50, _UI_health, 1,1, 0 );
+draw_text_transformed(68,128, _UI_health, 0.8,0.8, 0 );
+
+draw_set_alpha(1);
+draw_text_transformed(200,50, tutorial_text, 1,1, 0 );
 /*
 for (var i = 1; i <= _playerHealthMax; i++) {
 	var _imageIndex = (i > _playerHealth);

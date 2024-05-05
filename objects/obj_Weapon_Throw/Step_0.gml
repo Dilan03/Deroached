@@ -10,4 +10,12 @@ if (speed <= 0.01) {
 	
 	instance_destroy();
 	
-	}
+}
+
+if (place_meeting(x, y, obj_Wall )) {
+	speed = 0; 
+}
+
+if (place_meeting(x, y, obj_Weapon_Pickup )) {
+	speed = 0; 
+}

@@ -4,6 +4,7 @@ localFrame = 0;
 targetDummy = noone;
 image_angle_ = 0;
 menu_open = false;
+red_key = true;
 
 
 #region sprites
@@ -32,7 +33,6 @@ if (global.targetX != -1) {
 	direction = global.targetDirection;
 }
 
-keys = 0;
 
 #region not sure to delete
 /*

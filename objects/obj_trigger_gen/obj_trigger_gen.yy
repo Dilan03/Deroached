@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Wall",
+  "%Name":"obj_trigger_gen",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Wall",
+  "name":"obj_trigger_gen",
   "overriddenProperties":[],
   "parent":{
     "name":"Entities",
@@ -26,15 +26,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"","%Name":"doorDef","filters":[],"listItems":[],"multiselect":false,"name":"doorDef","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"none","varType":2,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
+    "name":"sTrigger",
+    "path":"sprites/sTrigger/sTrigger.yy",
   },
   "spriteMaskId":null,
   "visible":true,

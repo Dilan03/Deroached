@@ -78,7 +78,7 @@ function shootWeapon(){
 		    shot.damage   = obj_Control.damage_Smg;
 		    shot.speed    = obj_Control.ShotSpeed_Smg;
 		    shot.friction = obj_Control.friction_Pistol;
-		    shot.direction =  random_range(-obj_Control.spread_Aka, obj_Control.spread_Aka);				
+		    shot.direction = image_angle_ + random_range(-obj_Control.spread_Aka, obj_Control.spread_Aka);				
 			ammo -= 1;  shoot_timer = obj_Control.shoot_timer_Aka;
 			
 			var muzzle = instance_create_layer(shotX, shotY, "Instances", obj_Muzzle);

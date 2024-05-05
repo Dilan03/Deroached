@@ -19,15 +19,23 @@ draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red, c_red,
 draw_set_alpha(0.5);*/
 // debug checking
 if (obj_Control.UIDraw == true) {
+	/*
 	draw_set_halign(fa_center);
 
- var text_1 = "Ammo: " + string(ammo);
- draw_set_alpha(1);
- draw_text_transformed(oCamera.x-20,oCamera.y+70, text_1, 1,1, 0 );
+	var text_1 = string(ammo);
+	draw_set_alpha(1);
+	draw_text_transformed(oCamera.x-20,oCamera.y+70, text_1, 1,1, 0 );
 
- var text_2 = weapon;
- draw_set_alpha(1);
- draw_text_transformed(oCamera.x-20,oCamera.y+50, text_2, 1,1, 0 );
+	var text_2 = weapon;
+	draw_set_alpha(1);
+	draw_text_transformed(oCamera.x-20,oCamera.y+50, text_2, 1,1, 0 );
+ 
+	if(weapon == "smg") {
+		draw_set_alpha(1);
+		draw_sprite(spr_Pickup_Smg, 10, oCamera.x-20,oCamera.y+70);
+	}
+	
+	*/
 
 //draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, 1);
 //draw_set_alpha(0.5);
