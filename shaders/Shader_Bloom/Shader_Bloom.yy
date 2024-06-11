@@ -4,7 +4,7 @@
   "name":"Shader_Bloom",
   "parent":{
     "name":"TitleScreen",
-    "path":"folders/Objects/TitleScreen.yy",
+    "path":"folders/Objects/UI/TitleScreen.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

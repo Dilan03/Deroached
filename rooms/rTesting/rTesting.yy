@@ -27,6 +27,7 @@
     {"name":"inst_64BDDEFD","path":"rooms/rTesting/rTesting.yy",},
     {"name":"inst_2EB48D33","path":"rooms/rTesting/rTesting.yy",},
     {"name":"inst_66BDE577","path":"rooms/rTesting/rTesting.yy",},
+    {"name":"inst_13B5CD08","path":"rooms/rTesting/rTesting.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -34,6 +35,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances_Walls","depth":100,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_263C9C6A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_263C9C6A","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.8125,"scaleY":0.5,"x":16.0,"y":20.0,},
         {"$GMRInstance":"","%Name":"inst_5845A97D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5845A97D","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.625,"scaleY":0.25,"x":168.0,"y":340.0,},
+        {"$GMRInstance":"","%Name":"inst_13B5CD08","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13B5CD08","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":216.0,"y":224.0,},
       ],"layers":[],"name":"Instances_Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_3DA6E306","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3DA6E306","objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-40.0,"y":56.0,},

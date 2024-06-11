@@ -96,6 +96,12 @@ if(obj_Player.weapon == "shotgun") {
 	draw_sprite_ext(spr_Pickup_Shotgun, 0, 290,157, 1.8,1.8,0,-1,1);
 }
 
+// keys
+if(obj_Player.red_key_var == true) {
+	draw_set_alpha(1);
+	draw_sprite(red_key, 10, 50, 132);
+}
+
 var _UI_health = _playerHealth;
 draw_set_alpha(1);
 draw_text_transformed(68,128, _UI_health, 0.8,0.8, 0 );

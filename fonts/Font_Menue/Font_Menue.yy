@@ -353,7 +353,7 @@
   "name":"Font_Menue",
   "parent":{
     "name":"TitleScreen",
-    "path":"folders/Objects/TitleScreen.yy",
+    "path":"folders/Objects/UI/TitleScreen.yy",
   },
   "pointRounding":0,
   "ranges":[

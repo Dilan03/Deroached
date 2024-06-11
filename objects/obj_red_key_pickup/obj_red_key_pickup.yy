@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_PalmTree",
+  "%Name":"obj_red_key_pickup",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_PalmTree",
+  "name":"obj_red_key_pickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"TitleScreen",
-    "path":"folders/Objects/UI/TitleScreen.yy",
+    "name":"keys",
+    "path":"folders/Objects/Entities/keys.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,9 +34,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Tree",
-    "path":"sprites/spr_Tree/spr_Tree.yy",
+    "name":"red_key",
+    "path":"sprites/red_key/red_key.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_weaponMask",
+    "path":"sprites/spr_weaponMask/spr_weaponMask.yy",
+  },
   "visible":true,
 }
