@@ -4,9 +4,9 @@ localFrame = 0;
 targetDummy = noone;
 image_angle_ = 0;
 menu_open = false;
-red_key_var = true;
-blue_key_var = true;
-yellow_key_var = true;
+red_key_var = false;
+blue_key_var = false;
+yellow_key_var = false;
 
 
 #region sprites

@@ -5,7 +5,7 @@ if(menu_open) {
 	
 	exit;
 }
-show_debug_message(red_key_var)
+
 //Open DisplayMenu
 if(keyboard_check_pressed(vk_escape)) 
 {

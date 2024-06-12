@@ -99,7 +99,17 @@ if(obj_Player.weapon == "shotgun") {
 // keys
 if(obj_Player.red_key_var == true) {
 	draw_set_alpha(1);
-	draw_sprite(red_key, 10, 50, 132);
+	draw_sprite(red_key, 10, 2, 116);
+}
+
+if(obj_Player.blue_key_var == true) {
+	draw_set_alpha(1);
+	draw_sprite(blue_key, 10, 14, 116);
+}
+
+if(obj_Player.yellow_key_var == true) {
+	draw_set_alpha(1);
+	draw_sprite(yellow_key, 10, 26, 116);
 }
 
 var _UI_health = _playerHealth;
