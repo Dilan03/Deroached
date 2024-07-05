@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"medkits",
-    "path":"folders/Sprites/medkits.yy",
+    "path":"folders/Sprites/keys/medkits.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -10,8 +10,8 @@ yellow_key_var = false;
 
 
 #region sprites
-	sprite_Walk = sRoachBit_Walk;
-	sprite_Idle = sRoachBit_idle;
+	sprite_Walk = sPlayer_bit_walk;
+	sprite_Idle = sPlayer_bit_idle;
 #endregion
 
 #region weapon

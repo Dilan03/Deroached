@@ -14,7 +14,7 @@ function Weapon(_x_shot_org, _x_shot_ang, _damage, _shot_speed, _shot_friction, 
 	#region methods
 		playerShoot = function(_instance_ToStickTo, _instance_shot, _instance_muzzle) {
 	        shotX = _instance_ToStickTo.x + lengthdir_x(x_shot_org, _instance_ToStickTo.direction - x_shot_ang);    
-			shotY = _instance_ToStickTo.y - 20;  
+			shotY = _instance_ToStickTo.y;  
 		 
 			var shot = instance_create_layer(shotX,shotY, "Instances", _instance_shot);
 			shot.damage   = damage;

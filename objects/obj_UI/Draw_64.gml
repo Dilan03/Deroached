@@ -118,17 +118,9 @@ draw_text_transformed(68,128, _UI_health, 0.8,0.8, 0 );
 
 draw_set_alpha(1);
 draw_text_transformed(200,50, tutorial_text, 1,1, 0 );
-/*
-for (var i = 1; i <= _playerHealthMax; i++) {
-	var _imageIndex = (i > _playerHealth);
-	if( i == _playerHealth+1) {
-		_imageIndex += (_playerHealthFrac > 0);
-		_imageIndex += (_playerHealthFrac > 0.25);
-		_imageIndex += (_playerHealthFrac > 0.5);
-	}
-	
-	draw_sprite(sRoachBit_idle, _imageIndex, 8 +((i-1)*16), 8);
-}*/
 
-//draw_sprite(sRoachBit_idle, 0,50 , 50);
-//display_set_gui_size(320,180);
+if (global.playerHealth <= 0) {
+	draw_sprite_ext(sDark_screen, 0, 0, 0, 10, 10, 0,-1, 0.5)
+	draw_set_alpha(1);
+	draw_sprite(sDeathscreen, 0 , 125, 30)
+}

@@ -10,7 +10,7 @@ alarm[0] = 1;
 
 //pistol = new Weapon(_x_shot_org, _x_shot_ang,1, 6, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
 var _smg_struct = {
-	x_shot_org: 14,
+	x_shot_org: 5,
 	x_shot_ang: 22,
 	damage: 1, 
 	shot_speed: 9,
@@ -18,7 +18,7 @@ var _smg_struct = {
 	spread: 22,
 	ammo: 70, 
 	shoot_timer: 5, 
-	muzzle_distance: 14,
+	muzzle_distance: 0,
 	muzzle_extraAngle: 22
 }
 smg = new Weapon(	_smg_struct.x_shot_org,
@@ -38,10 +38,10 @@ smg = new Weapon(	_smg_struct.x_shot_org,
 damage_Knife = 1;
 damage_Pistol = 2;
 damage_Smg = 1;
-damage_Uzi = 1;
-damage_Aka = 1;
-damage_Mg = 1;
-damage_Shotgun = 1;
+damage_Uzi = 2;
+damage_Aka = 3;
+damage_Mg = 3;
+damage_Shotgun = 5;
 
 ShotSpeed_Pistol = 6;
 ShotSpeed_Smg = 9;
@@ -57,12 +57,12 @@ friction_Aka = 0.04;
 friction_Mg = 0.02;
 friction_Shotgun = 0.2;
 
-shoot_timer_Pistol = 35;
+shoot_timer_Pistol = 30;
 shoot_timer_Smg = 5;
 shoot_timer_Uzi = 4;
 shoot_timer_Aka = 10;
 shoot_timer_Mg  = 3;
-shoot_timer_Shotgun = 50;
+shoot_timer_Shotgun = 40;
 
 ammo_Pistol = 12;
 ammo_Smg = 55;
@@ -76,7 +76,7 @@ spread_Smg = 22;
 spread_Uzi = 25;
 spread_Aka = 15;
 spread_Mg  = 15;
-spread_Shotgun =8;
+spread_Shotgun =5;
 
 
 

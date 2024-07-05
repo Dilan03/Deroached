@@ -13,7 +13,7 @@ function shootWeapon(){
 			shotX = x + lengthdir_x(12, image_angle_-25);    
 			shotY = y + lengthdir_y(12, image_angle_-25);  
 		
-			var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+			var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Pistol);
 			shot.damage    = obj_Control.damage_Pistol;
 			shot.speed     = obj_Control.ShotSpeed_Pistol;
 			shot.friction  = obj_Control.friction_Pistol;
@@ -29,7 +29,7 @@ function shootWeapon(){
 
 		case "smg": {
 			var _smg = obj_Control.smg;
-				_smg.playerShoot(obj_Player, obj_Shot, obj_Muzzle);
+				_smg.playerShoot(obj_Player, obj_Shot_Smg, obj_Muzzle);
 			
 			/*
 			shotX = x + lengthdir_x(obj_Control.smg.x_shot_org, direction - obj_Control.smg.x_shot_ang);    
@@ -55,7 +55,7 @@ function shootWeapon(){
          shotX = x + lengthdir_x(16, image_angle_-16);    
 		 shotY = y + lengthdir_y(16, image_angle_-16);  	
 		 
-	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Uzi);
 		    shot.damage   = obj_Control.damage_Uzi;
 		    shot.speed    = obj_Control.ShotSpeed_Uzi;
 		    shot.friction = obj_Control.friction_Uzi;
@@ -74,7 +74,7 @@ function shootWeapon(){
          shotX = x + lengthdir_x(17, image_angle_-32);    
 		 shotY = y + lengthdir_y(17, image_angle_-32); 		
 		 
-	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Aka);
 		    shot.damage   = obj_Control.damage_Smg;
 		    shot.speed    = obj_Control.ShotSpeed_Smg;
 		    shot.friction = obj_Control.friction_Pistol;
@@ -93,7 +93,7 @@ function shootWeapon(){
          shotX = x + lengthdir_x(16, image_angle_-22);    
 		 shotY = y + lengthdir_y(16, image_angle_-22); 
 		 
-	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+	 	var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Mg);
 		    shot.damage   = obj_Control.damage_Mg;
 		    shot.speed    = obj_Control.ShotSpeed_Mg;
 		    shot.friction = obj_Control.friction_Mg;
@@ -115,7 +115,7 @@ function shootWeapon(){
 				shotY = y + lengthdir_y(24, image_angle_-20); 
 	
 				for (var i = 0;  i < 6; i++ ){
-				var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+				var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Shotgun);
 					shot.damage   = obj_Control.damage_Shotgun;
 					shot.speed    = obj_Control.ShotSpeed_Shotgun;
 					shot.friction = obj_Control.friction_Shotgun;
@@ -123,7 +123,7 @@ function shootWeapon(){
 				}
 	
 				for (var i2 = 1;  i2 < 6; i2++ ){
-				var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot);
+				var shot = instance_create_layer(shotX,shotY, "Instances", obj_Shot_Shotgun);
 					shot.damage   = obj_Control.damage_Shotgun;
 					shot.speed    = obj_Control.ShotSpeed_Shotgun;
 					shot.friction = obj_Control.friction_Shotgun;
