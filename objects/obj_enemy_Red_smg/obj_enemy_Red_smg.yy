@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sRoachEnemyWalk",
-    "path":"sprites/sRoachEnemyWalk/sRoachEnemyWalk.yy",
+    "name":"sPlayer_bit_walk",
+    "path":"sprites/sPlayer_bit_walk/sPlayer_bit_walk.yy",
   },
   "spriteMaskId":{
     "name":"spr_MaskEnemy",

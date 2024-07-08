@@ -21,16 +21,37 @@ if(_oldSprite != sprite_index ) localFrame = 0;
 */
 
 if(state = "idle") {
+	if(facing = "right") {
+		image_angle_ = 0;
+		var _totalFrames = sprite_get_number(sprite_index) / 4;
+		image_index = 0 * _totalFrames;
+	}
+	
+	if(facing = "up") {
+		image_angle_ = 90;
+		var _totalFrames = sprite_get_number(sprite_index) / 4;
+		image_index = 1 * _totalFrames;
+		
+	}
+	
+	if(facing = "left") {
+		image_angle_ = 180;
+		var _totalFrames = sprite_get_number(sprite_index) / 4;
+		if(sprite_get_number(sprite_index)==32) {
+			image_index = 23
+		} else {
+			image_index = 2 * _totalFrames;
+		}
+		
+	}
+	
 	if(facing = "down") {
 		image_angle_ = 270;
 		var _totalFrames = sprite_get_number(sprite_index) / 4;
 		image_index = 3 * _totalFrames;
+
+		
 	}
-	//path_started = false;
-	//state = "patrolling";
-	
-	//image_angle_ = 90;
-	//image_index = 8;
 
 }
 
@@ -92,7 +113,14 @@ if (state == "nothing here"){
 if (state == "going back"){ 
 	if ( distance_to_point(position_Start_X,position_Start_Y) < 1) {
 		
-		state = "idle";
+		if(initially_patrolling) {
+			path_started = false;
+			state = "patrolling";
+			
+		} else {
+			state = "idle";
+		}
+		
 		emote.sprite_index = spr_Emote_Enemy_State_Idle;
 			
 	}			

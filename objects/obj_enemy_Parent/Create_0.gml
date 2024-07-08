@@ -4,17 +4,14 @@ image_angle_ = 0;
 localFrame = 0;
 enemy_healt = 10;
 
+sprite_whenDead = spr_EnemyRed_Dead;
+sprite_NotAggro = spr_EnemyRed_Walk;
+sprite_Aggro = spr_EnemyRed_Walk_Weapon;
+sprite_Idle	= spr_EnemyRed_Walk_Weapon;
 #region weapon
 	weapon_sprite = spr_Nothing;
 	weapon = "";
 	alarm[0] = 3; // reset timers after 3 steps
-#endregion
-
-#region sprites
-	sprite_whenDead = spr_EnemyRed_Dead;
-	sprite_NotAggro = spr_EnemyRed_Walk;
-	sprite_Aggro    = spr_EnemyRed_Walk_Weapon;
-	sprite_Idle	=	sRoackIdle2;
 #endregion
 
 #region emote
@@ -37,7 +34,7 @@ enemy_healt = 10;
 	position_Target_Y = y;
 #endregion
 
-facing = "down";
+facing = "right";
 state = "idle";
 
 walkSpeed_Aggro_Checking = 2;
