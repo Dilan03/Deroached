@@ -34,7 +34,7 @@ sprite_Idle	= spr_EnemyRed_Walk_Weapon;
 	position_Target_Y = y;
 #endregion
 
-facing = "right";
+facing = "down";
 state = "idle";
 
 walkSpeed_Aggro_Checking = 2;

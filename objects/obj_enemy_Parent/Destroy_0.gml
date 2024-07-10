@@ -2,7 +2,6 @@ instance_destroy(emote);
 
 // create "dead" instance
 var dead = instance_create_layer(x,y, "Instances_Dead", obj_enemy_Dead);
-    dead.image_angle  = image_angle + 90;
     dead.sprite_index = sprite_whenDead; 
  
  // destroy path if there to free memory

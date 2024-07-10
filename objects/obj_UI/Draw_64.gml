@@ -5,6 +5,9 @@ var _playerHealthMax = global.playerHealthMax;
 
 //_playerHealth -= _playerHealthFrac;
 
+
+
+//draw_sprite_ext(sMouse_pick_up, 0, 285, 120, 0.45,0.45,0,-1,1);
 //show_debug_message(_playerHealth);
 if(_playerHealth <= 100 and _playerHealth >= 90) {
 	draw_set_alpha(1);
@@ -63,7 +66,9 @@ if(_playerHealth <= 0) {
 
 	//draw_set_halign(fa_center);
 
-
+draw_sprite_ext(sMouse_pick_up, 0, 290, 114, 0.3,0.3,0,-1,1);
+draw_sprite_ext(sF_open, 0, 290, 102, 0.3,0.3,0,-1,1);
+draw_sprite_ext(sF_pick_up, 0, 290, 90, 0.3,0.3,0,-1,1);
 /*
 var text_2 = obj_Player.weapon;
 draw_set_alpha(1);
@@ -74,41 +79,55 @@ draw_text_transformed(295,164, text_1, 0.7,0.7, 0 );
  
 if(obj_Player.weapon == "smg") {
 	draw_sprite_ext(spr_Pickup_Smg, 0, 290,157, 1.8,1.8,0,-1,1);
+	draw_sprite_ext(sMouse_throw, 0, 290, 126, 0.3,0.3,0,-1,1);
 }
 
 if(obj_Player.weapon == "uzi") {
 	draw_sprite_ext(spr_Pickup_Uzi, 0, 290,157, 1.8,1.8,0,-1,1);
+	draw_sprite_ext(sMouse_throw, 0, 290, 120, 0.3,0.3,0,-1,1);
 }
-
 if(obj_Player.weapon == "pistol") {
 	draw_sprite_ext(spr_Pickup_Pistol, 0, 290,157, 1.8,1.8,0,-1,1);
+	draw_sprite_ext(sMouse_throw, 0, 290, 120, 0.3,0.3,0,-1,1);
 }
 
 if(obj_Player.weapon == "mg") {
 	draw_sprite_ext(spr_Pickup_Mg, 0, 290,157, 1.8,1.8,0,-1,1);
+	draw_sprite_ext(sMouse_throw, 0, 290, 120, 0.3,0.3,0,-1,1);
 }
 
 if(obj_Player.weapon == "aka") {
 	draw_sprite_ext(spr_Pickup_Aka, 0, 290,157, 1.8,1.8,0,-1,1);
+	draw_sprite_ext(sMouse_throw, 0, 290, 120, 0.3,0.3,0,-1,1);
 }
 
 if(obj_Player.weapon == "shotgun") {
 	draw_sprite_ext(spr_Pickup_Shotgun, 0, 290,157, 1.8,1.8,0,-1,1);
+	draw_sprite_ext(sMouse_throw, 0, 290, 120, 0.3,0.3,0,-1,1);
 }
 
 // keys
 if(obj_Player.red_key_var == true) {
 	draw_set_alpha(1);
 	draw_sprite(red_key, 10, 2, 116);
+} else {
+	draw_set_alpha(0.3);
+	draw_sprite(red_key, 10, 2, 116);
 }
 
 if(obj_Player.blue_key_var == true) {
 	draw_set_alpha(1);
 	draw_sprite(blue_key, 10, 14, 116);
+} else {
+	draw_set_alpha(0.3);
+	draw_sprite(blue_key, 10, 14, 116);
 }
 
 if(obj_Player.yellow_key_var == true) {
 	draw_set_alpha(1);
+	draw_sprite(yellow_key, 10, 26, 116);
+} else {
+	draw_set_alpha(0.3);
 	draw_sprite(yellow_key, 10, 26, 116);
 }
 

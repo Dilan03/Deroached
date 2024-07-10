@@ -1,6 +1,6 @@
 function pickupWeapon(){
 
-
+	draw_sprite_ext(sMouse_throw, 0, 285, 120, 0.45,0.45,0,-1,1);
 	var pickUpWeapon = mouse_check_button_released(mb_right) or gamepad_button_check_released(0,gp_shoulderl);
 	if (pickUpWeapon) {
 

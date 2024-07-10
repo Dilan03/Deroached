@@ -23,7 +23,7 @@
   ],
   "name":"sRoach_dead",
   "nineSlice":null,
-  "origin":4,
+  "origin":1,
   "parent":{
     "name":"Player",
     "path":"folders/Sprites/16-bit/Player.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":9,
-    "yorigin":4,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

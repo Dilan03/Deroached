@@ -1,1 +1,2 @@
-image_alpha = 0.6;
+
+//sprite_index = sPlayer_bit_idle

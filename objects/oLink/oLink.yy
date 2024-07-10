@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMenuButtonSquare",
-    "path":"sprites/sMenuButtonSquare/sMenuButtonSquare.yy",
+    "name":"link",
+    "path":"sprites/link/link.yy",
   },
   "spriteMaskId":null,
   "visible":true,

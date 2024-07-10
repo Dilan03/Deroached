@@ -135,6 +135,10 @@ if (state == "patrolling"){
 	}
 	
 }
+
+if (state == "facingVertical") {
+	alarm[3] = 90;
+}
 	
 // new
 if (state == "attack range"){

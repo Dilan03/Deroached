@@ -1,11 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(menu_open) {
-	
-	exit;
-}
-
 //Open DisplayMenu
 if(keyboard_check_pressed(vk_escape)) 
 {
