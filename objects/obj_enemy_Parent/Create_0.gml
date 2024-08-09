@@ -35,7 +35,7 @@ sprite_Idle	= spr_EnemyRed_Walk_Weapon;
 #endregion
 
 facing = "down";
-state = "idle";
+state = state_var;
 
 walkSpeed_Aggro_Checking = 2;
 walkSpeed_Going_Back     = 1;
@@ -44,7 +44,7 @@ ai_NothingHere_time = 60;
 ai_NothingHere_timer = ai_NothingHere_time;
 
 ai_I_See_you_Angle = 15;
-ai_I_See_you = 3;
+ai_I_See_you = 1;
 
 sightMAX = 100;
 attackRange      = floor(sightMAX/3);

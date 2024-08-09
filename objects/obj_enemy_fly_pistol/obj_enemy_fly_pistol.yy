@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"fly_idle_enemy",
-    "path":"sprites/fly_idle_enemy/fly_idle_enemy.yy",
+    "name":"fly_walk_enemy",
+    "path":"sprites/fly_walk_enemy/fly_walk_enemy.yy",
   },
   "spriteMaskId":{
-    "name":"spr_MaskEnemy",
-    "path":"sprites/spr_MaskEnemy/spr_MaskEnemy.yy",
+    "name":"spr_MaskEnemy2",
+    "path":"sprites/spr_MaskEnemy2/spr_MaskEnemy2.yy",
   },
   "visible":true,
 }

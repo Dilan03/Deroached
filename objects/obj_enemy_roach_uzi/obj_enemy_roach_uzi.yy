@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sRoachBit_idle",
-    "path":"sprites/sRoachBit_idle/sRoachBit_idle.yy",
+    "name":"sPlayer_bit_walk",
+    "path":"sprites/sPlayer_bit_walk/sPlayer_bit_walk.yy",
   },
   "spriteMaskId":{
-    "name":"spr_MaskEnemy",
-    "path":"sprites/spr_MaskEnemy/spr_MaskEnemy.yy",
+    "name":"spr_MaskEnemy2",
+    "path":"sprites/spr_MaskEnemy2/spr_MaskEnemy2.yy",
   },
   "visible":true,
 }

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"lizard_idle_enemy",
-    "path":"sprites/lizard_idle_enemy/lizard_idle_enemy.yy",
+    "name":"lizard_walk_enemy",
+    "path":"sprites/lizard_walk_enemy/lizard_walk_enemy.yy",
   },
   "spriteMaskId":{
     "name":"spr_MaskEnemy",

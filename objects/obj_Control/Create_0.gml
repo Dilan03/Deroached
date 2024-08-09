@@ -17,7 +17,7 @@ var _smg_struct = {
 	shot_speed: 9,
 	shot_friction: 0.04,
 	spread: 22,
-	ammo: 70, 
+	ammo: 40, 
 	shoot_timer: 5, 
 	muzzle_distance: 0,
 	muzzle_extraAngle: 22
@@ -37,11 +37,11 @@ smg = new Weapon(	_smg_struct.x_shot_org,
 //mg = new Weapon(_x_shot_org, _x_shot_ang, 1, 7, _shot_friction, _spread, _ammo, _shoot_timer, _muzzle_distance, _muzzle_extraAngle);
 // values of weapons
 damage_Knife = 1;
-damage_Pistol = 3;
+damage_Pistol = 2;
 damage_Smg = 1;
 damage_Uzi = 2;
 damage_Aka = 3;
-damage_Mg = 3;
+damage_Mg = 4;
 damage_Shotgun = 5;
 
 ShotSpeed_Pistol = 6;
@@ -66,9 +66,9 @@ shoot_timer_Mg  = 3;
 shoot_timer_Shotgun = 40;
 
 ammo_Pistol = 12;
-ammo_Smg = 55;
-ammo_Uzi = 80;
-ammo_Aka = 40;
+ammo_Smg = 40;
+ammo_Uzi = 50;
+ammo_Aka = 30;
 ammo_Mg  = 140;
 ammo_Shotgun = 2;
 

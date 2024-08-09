@@ -17,7 +17,6 @@ else {
 	}
 	
 if(instance_exists(obj_Player)) && (position_meeting(obj_Player.x, obj_Player.y, id)) {
-	show_debug_message("llave")
 	if(keyboard_check_pressed(ord("F"))) {
 		obj_Player.blue_key_var = true
 		instance_destroy();

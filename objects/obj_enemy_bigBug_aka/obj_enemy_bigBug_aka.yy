@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bigBug_idle_enemy",
-    "path":"sprites/bigBug_idle_enemy/bigBug_idle_enemy.yy",
+    "name":"bigBug_walk_enemy",
+    "path":"sprites/bigBug_walk_enemy/bigBug_walk_enemy.yy",
   },
   "spriteMaskId":{
-    "name":"spr_MaskEnemy",
-    "path":"sprites/spr_MaskEnemy/spr_MaskEnemy.yy",
+    "name":"spr_MaskEnemy2",
+    "path":"sprites/spr_MaskEnemy2/spr_MaskEnemy2.yy",
   },
   "visible":true,
 }

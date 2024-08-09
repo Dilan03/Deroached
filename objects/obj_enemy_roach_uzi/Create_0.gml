@@ -7,12 +7,12 @@ sprite_Idle	=	sPlayer_bit_idle;
 // what weapon are is he holding
 weapon = "uzi";
 
-walkSpeed_Aggro_Checking = 2;
-walkSpeed_Going_Back     = 0.75;
-ai_I_See_you = 3;
-state = "idle"
+walkSpeed_Aggro_Checking = 3.5;
+walkSpeed_Going_Back     = 1.5;
+ai_I_See_you = 1;
+//state = "idle"
 enemy_healt = 12;
-ai_I_See_you_Angle = 40;
-sightMAX = 100;
-attackRange      = floor(sightMAX/3);
+ai_I_See_you_Angle = 30;
+sightMAX = 150;
+attackRange      = floor(sightMAX/2);
 attackRangeBreak = sightMAX;
