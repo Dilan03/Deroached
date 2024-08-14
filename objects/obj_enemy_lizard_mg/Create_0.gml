@@ -14,5 +14,5 @@ ai_I_See_you = 3;
 enemy_healt = 12;
 ai_I_See_you_Angle = 40;
 sightMAX = 150;
-attackRange      = floor(sightMAX/2);
+attackRange      = 100;
 attackRangeBreak = sightMAX;

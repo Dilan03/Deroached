@@ -12,6 +12,9 @@ if (room != rCredits) {
 		draw_set_alpha(1);
 		draw_sprite(sHealth_faces, 0, 0, 132);
 	} 
+	
+	draw_set_alpha(1);
+	draw_sprite_ext(sFullscreen, 0, 4, 4, 0.38,0.38,0,-1,1);
 
 	if(_playerHealth <= 89 and _playerHealth >= 80) {
 		draw_set_alpha(1);
@@ -139,7 +142,7 @@ if (room != rCredits) {
 
 	var _UI_health = _playerHealth;
 	draw_set_alpha(1);
-	draw_text_transformed(68,128, _UI_health, 0.8,0.8, 0 );
+	//draw_text_transformed(68,128, _UI_health, 0.8,0.8, 0 );
 
 	//draw_set_alpha(1);
 	//draw_text_transformed(200,50, tutorial_text, 1,1, 0 );

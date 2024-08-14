@@ -17,7 +17,7 @@ if(keyboard_check_pressed(vk_escape))
 image_angle_ = direction;
 
 movePlayer();
-
+/*
 // camera
 if (keyboard_check(vk_shift)) {
 	
@@ -32,6 +32,7 @@ if (keyboard_check(vk_shift)) {
 
      obj_TargetDummy.timer = 5;
 }
+*/
 
 // fire left mouse button pressed
 var fireWeapon = mouse_check_button(mb_left) or gamepad_button_check(0,gp_shoulderr);

@@ -42,7 +42,7 @@ damage_Smg = 1;
 damage_Uzi = 2;
 damage_Aka = 3;
 damage_Mg = 4;
-damage_Shotgun = 5;
+damage_Shotgun = 6;
 
 ShotSpeed_Pistol = 6;
 ShotSpeed_Smg = 9;
@@ -69,7 +69,7 @@ ammo_Pistol = 12;
 ammo_Smg = 40;
 ammo_Uzi = 50;
 ammo_Aka = 30;
-ammo_Mg  = 140;
+ammo_Mg  = 60;
 ammo_Shotgun = 2;
 
 spread_Pistol = 2;

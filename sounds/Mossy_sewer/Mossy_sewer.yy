@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"Mossy_sewer.mp3",
   "type":0,
-  "volume":0.06,
+  "volume":0.3,
 }

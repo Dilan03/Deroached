@@ -11,7 +11,7 @@ walkSpeed_Aggro_Checking = 3;
 walkSpeed_Going_Back     = 1;
 ai_I_See_you = 2;
 
-ai_I_See_you_Angle = 40;
-sightMAX = 100;
-attackRange      = floor(sightMAX/3);
+ai_I_See_you_Angle = 45;
+sightMAX = 110;
+attackRange      = 60;
 attackRangeBreak = sightMAX;
