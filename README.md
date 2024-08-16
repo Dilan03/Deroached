@@ -11,8 +11,8 @@ In *Deroached*, players must escape an asylum by sneaking past or eliminating en
 
 ## **Installation Instructions**
 To play *Deroached*, follow these steps:
-1. Go to the game’s webpage and follow the instructions.
-2. Click the provided download link.
-3. Download the **DEROACHED.zip** file.
-4. Extract the contents of the zip file.
-5. Double-click **DEROACHED.exe** to start the game.
+
+1. Click the provided download [Link Text](https://dregen-erado.itch.io/deroached).
+2. Download the **DEROACHED.zip** file.
+3. Extract the contents of the zip file.
+4. Double-click **DEROACHED.exe** to start the game.
