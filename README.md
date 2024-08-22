@@ -1,6 +1,6 @@
 # **Deroached** *(A Stealth Game)*
 
-In *Deroached*, players must escape an asylum by sneaking past or eliminating enemies. Use stealth and strategy to reach your goal without getting caught.
+A stealth game where you must escape from a heavily guarded asylum. Cunning and patience are your greatest assets as you avoid enemies or choose to eliminate them—how you survive is up to you. [Play it](https://dregen-erado.itch.io/deroached)
 
 ## **Technologies**
 - **Game Engine**: Made with GameMaker Language (GML) in GameMaker
